@@ -44,14 +44,48 @@ python3.12 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 ```
 
-Download the trained checkpoints from the
-[v1.0 release](https://github.com/NigelDoering/structured-machine-tom/releases/tag/v1.0)
-and unpack them at the repository root (they extract into `outputs/`):
+All downloads are attached to the
+[v1.0 release](https://github.com/NigelDoering/structured-machine-tom/releases/tag/v1.0).
+
+### Use the trained model
+
+Most readers only need **`smtom-bdibottleneck.pt`**, the trained SMToM model (BDIBottleneck,
+seed 0, the checkpoint behind all of the paper's counterfactual results). Put it in
+`checkpoints/` and run the demo, which attributes desires, beliefs, and a goal for one test
+episode and then edits a belief and a desire:
 
 ```bash
-tar -xzf checkpoints-main.tar.gz        # 300-epoch main-paper models   -> outputs/<model>/
-tar -xzf checkpoints-appendix.tar.gz    # 30-epoch appendix models      -> outputs/diagnostics/
-tar -xzf diagnostics-intermediate.tar.gz  # large per-episode CSVs     -> outputs/diagnostics/analyses/
+mkdir -p checkpoints && mv smtom-bdibottleneck.pt checkpoints/
+.venv/bin/python scripts/demo_counterfactual.py --split test --episode 0 --fraction 0.5
+```
+
+```
+Agent studious_stem_0 (studious_stem), true goal: pcynh, observed 20/40 steps
+  inferred desires : biomedical_lib 0.27, erc_east 0.18, pcynh 0.12
+  believed closed  : 64_degrees, pines, foodworx
+  predicted goals  : biomedical_lib 0.32, center_hall 0.27, pcynh 0.26
+
+If the agent believed biomedical_lib were closed:
+  P(biomedical_lib): 0.32 -> 0.24
+  predicted goals  : pcynh 0.30, center_hall 0.27, biomedical_lib 0.24
+
+If the agent wanted food instead:
+  P(any food POI)  : 0.01 -> 0.21
+  predicted goals  : sun_god_lawn 0.28, the_pub 0.26, pines 0.13
+```
+
+The single checkpoint also works with the evaluation scripts, for example
+`scripts/eval_counterfactual_belief.py --bnk-ckpt checkpoints/smtom-bdibottleneck.pt`.
+
+### Reproduce the paper
+
+Exact reproduction needs every model the paper reports (all baselines and ablations, 3 seeds
+each). These ship as archives that unpack into `outputs/` at the repository root:
+
+```bash
+tar -xzf checkpoints-paper.tar.gz         # 18 main-paper models (6 models x 3 seeds) -> outputs/<model>/
+tar -xzf checkpoints-appendix.tar.gz      # 30-epoch appendix models                 -> outputs/diagnostics/
+tar -xzf diagnostics-intermediate.tar.gz  # large per-episode CSVs                   -> outputs/diagnostics/analyses/
 ```
 
 Regenerate every main-paper figure and table, then check them against the committed copies:
@@ -75,7 +109,7 @@ Set `PY=/path/to/python` to use an interpreter other than `.venv/bin/python` in 
 
 | Level | What you run | What you get | Applies to |
 |---|---|---|---|
-| **A. Re-evaluate the released checkpoints** | `reproduce/evaluate_main.sh` (minutes) | **Bit-identical** figures, tables, and JSON. Evaluation is fully deterministic. | All main-paper results: Figs. 2–4 and 6–19, Tables 1–3, 14–15, 20–22 |
+| **A. Re-evaluate the released checkpoints** | `checkpoints-paper.tar.gz`, then `reproduce/evaluate_main.sh` (minutes) | **Bit-identical** figures, tables, and JSON. Evaluation is fully deterministic. | All main-paper results: Figs. 2–4 and 6–19, Tables 1–3, 14–15, 20–22 |
 | **B. Regenerate the appendix diagnostics from released checkpoints** | `STAGES="diagnostics trajectory tables" reproduce/appendix.sh` | Same numbers as the committed reference outputs | Tables 12, 13, 16–19 and the channel-use numbers in Appendix F |
 | **C. Retrain from scratch** | `reproduce/train_main.sh`, then `reproduce/evaluate_main.sh` | **Statistically equivalent, not identical** results (Section 9) | Everything |
 | **D. Regenerate the dataset** | `scripts/run_simulation.py` | A dataset drawn from the same generative process, **not** the paper's exact episodes (Section 4.3) | Data |
@@ -96,6 +130,7 @@ simulation/    probabilistic BDI data generator (no learned components)
 model/         PyTorch models and dataset/dataloader code
 scripts/       entry points: simulate, train_*, eval_*, diagnostics (diag_*, cf_*, robustness_*)
 reproduce/     one-command pipelines: evaluate_main.sh, train_main.sh, appendix.sh
+checkpoints/   (not committed) the downloaded single SMToM model for scripts/demo_counterfactual.py
 data/          campus walking graph, BToM distance cache, dataset splits (the paper's dataset)
 outputs/       training artifacts: per-model training histories/curves and, after download, checkpoints
 results/       evaluation outputs: the paper's figures, tables (.tex), and JSON results
@@ -195,7 +230,8 @@ prefix** (`model/meta_dataset.py`). The belief head reads `[z_d‖z_r]` and the 
 
 **Counterfactual API.** `BDIBottleneckPredictor.encode_components()` returns
 `(desire_probs, belief_probs, z_τ)`. Edit a channel, for example `belief_probs[:, g] = 0` or a
-replacement desire prototype, and call `predict_goal(...)` to re-run only the goal head. See
+replacement desire prototype, and call `predict_goal(...)` to re-run only the goal head.
+`scripts/demo_counterfactual.py` is a short, self-contained example; the full evaluations are
 `scripts/eval_counterfactual_belief.py` and `scripts/eval_counterfactual_desire.py`.
 
 `model/bdi_predictor.py` (`BDIPredictor`) and `scripts/train_bdi_predictor.py` are not models
@@ -230,7 +266,7 @@ With `--seed N`, a run writes to `<out>/seed_N/`: `best.pt` (selected by validat
 top-1), `accuracy_results.json` (per-epoch validation history plus per-fraction accuracy), and
 `training_curves.png`. Paper Figure 5 is `outputs/bdi_bottleneck/training_curves.png`.
 
-**Checkpoint layout.** In the released checkpoints, seed 0 sits directly in `outputs/<model>/`
+**Checkpoint layout.** In `checkpoints-paper.tar.gz`, seed 0 sits directly in `outputs/<model>/`
 and seeds 5 and 10 sit in `outputs/<model>/seed_5/` and `seed_10/`. The original seed-0 runs
 were launched without `--seed`, which is why they have no subfolder. `reproduce/evaluate_main.sh`
 accepts either layout and prefers `seed_0/` when it exists. AuxContext checkpoints are in
