@@ -84,7 +84,7 @@ each). These ship as archives that unpack into `outputs/` at the repository root
 
 ```bash
 tar -xzf checkpoints-paper.tar.gz         # 18 main-paper models (6 models x 3 seeds) -> outputs/<model>/
-tar -xzf checkpoints-appendix.tar.gz      # 30-epoch appendix models                 -> outputs/diagnostics/
+tar -xzf checkpoints-appendix.tar.gz      # 69 appendix models + dense dataset       -> outputs/diagnostics/
 tar -xzf diagnostics-intermediate.tar.gz  # large per-episode CSVs                   -> outputs/diagnostics/analyses/
 ```
 
@@ -317,8 +317,10 @@ The appendix's belief diagnostics, robustness sweeps, and trajectory-level count
 | Robustness sweeps | `outputs/diagnostics/robustness/{sparse,dense}/<config>/<model>/seed_*` | Table 13 and the robustness rows of Tables 17–19 |
 
 The dense regime adds medium (6–8 closed POIs) and dense (11–12 closed) belief configurations.
-Its dataset is generated into `outputs/diagnostics/dense/splits/` (not committed) with
-shortest-path routing (`--router-k 1`).
+Its dataset (`outputs/diagnostics/dense/splits/`) ships in `checkpoints-appendix.tar.gz`. It was
+generated with shortest-path routing (`--router-k 1`) before the seeding fix described in
+Section 4.3, so like the main dataset it cannot be regenerated exactly; the archived copy is
+the one the paper uses.
 
 `reproduce/appendix.sh` runs the full pipeline in stages
 (`data`, `train`, `diagnostics`, `robustness`, `aggregate`, `trajectory`, `tables`);
@@ -429,6 +431,12 @@ These are rounding or reporting differences. None affects a conclusion.
   url     = {https://openreview.net/forum?id=PfSNLg0zcK}
 }
 ```
+
+GitHub's "Cite this repository" button (from [`CITATION.cff`](CITATION.cff)) gives the same reference.
+
+## License
+
+The code is released under the [MIT License](LICENSE).
 
 Questions and issues: please open a GitHub issue, or contact Nigel Doering (nfdoerin@ucsd.edu)
 or Rahath Malladi (ramalladi@ucsd.edu).

@@ -1,0 +1,45 @@
+# Citation metadata read by GitHub's "Cite this repository" button.
+# Update preferred-citation (e.g. add the publication month) once the paper is published in TMLR.
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper below."
+title: "Structured Machine Theory of Mind from Agent Trajectories"
+type: software
+license: MIT
+repository-code: "https://github.com/NigelDoering/structured-machine-tom"
+authors:
+  - family-names: Doering
+    given-names: Nigel F.
+  - family-names: Malladi
+    given-names: Rahath
+  - family-names: Sangwan
+    given-names: Arshia
+  - family-names: Tonmoy
+    given-names: M Tanjid Hasan
+  - family-names: Doan
+    given-names: Jacob
+  - family-names: Danks
+    given-names: David
+  - family-names: Rahman
+    given-names: Tauhidur
+preferred-citation:
+  type: article
+  title: "Structured Machine Theory of Mind from Agent Trajectories"
+  authors:
+    - family-names: Doering
+      given-names: Nigel F.
+    - family-names: Malladi
+      given-names: Rahath
+    - family-names: Sangwan
+      given-names: Arshia
+    - family-names: Tonmoy
+      given-names: M Tanjid Hasan
+    - family-names: Doan
+      given-names: Jacob
+    - family-names: Danks
+      given-names: David
+    - family-names: Rahman
+      given-names: Tauhidur
+  journal: "Transactions on Machine Learning Research"
+  issn: "2835-8856"
+  year: 2026
+  url: "https://openreview.net/forum?id=PfSNLg0zcK"
