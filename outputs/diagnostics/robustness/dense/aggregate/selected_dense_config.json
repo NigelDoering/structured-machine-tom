@@ -23,5 +23,5 @@
       "within_tolerance": true
     }
   ],
-  "selection_source": "/home/rahm/PhD/bdi_tom_agents/outputs/diagnostics/robustness/sparse/aggregate/selected_dense_config.json"
+  "selection_source": "outputs/diagnostics/robustness/sparse/aggregate/selected_dense_config.json"
 }

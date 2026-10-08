@@ -139,7 +139,10 @@ def _dense_selection_metadata(robustness_root: Path, rows: list[dict[str, Any]])
     if sparse_selection_path.exists():
         with sparse_selection_path.open("r", encoding="utf-8") as f:
             selection = json.load(f)
-        selection["selection_source"] = str(sparse_selection_path)
+        source = sparse_selection_path.resolve()
+        if source.is_relative_to(ROOT.resolve()):  # keep the record machine-independent
+            source = source.relative_to(ROOT.resolve())
+        selection["selection_source"] = str(source)
         return selection
     configs = sorted({r["config"] for r in rows if r.get("config") != DEFAULT_CONFIG})
     return {
