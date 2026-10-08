@@ -30,8 +30,10 @@ echo "== Merge AuxContext into Figure 2, Table 1 (held-out beliefs) and Table 20
 # AuxContext test/new-agent curves come from outputs/context_goal_aux/seed_*/accuracy_results.json;
 # its held-out-belief columns come from results/goal_inference/aux_context_goal_quarters.csv,
 # which is regenerated here when the AuxContext checkpoints are present.
-if [ -f outputs/context_goal_aux/seed_0/best.pt ]; then
+if ls outputs/context_goal_aux/seed_{0,5,10}/best.pt >/dev/null 2>&1; then
   $PY scripts/eval_aux_context_bh.py
+else
+  echo "   (AuxContext checkpoints not found; using the committed aux_context_goal_quarters.csv)"
 fi
 $PY scripts/make_goal_inference_figures.py --paper
 

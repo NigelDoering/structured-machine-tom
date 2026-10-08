@@ -24,8 +24,10 @@ done
 
 mkdir -p logs
 for cmd in "${runs[@]}"; do
-  name=$(echo "$cmd" | awk '{print $1}' | xargs basename .py)
-  tag="$name$(echo "$cmd" | grep -o -- '--ablation [a-z_]*' | tr -d ' -' || true)_seed$(echo "$cmd" | grep -o -- '--seed [0-9]*' | awk '{print $2}')"
+  script=${cmd%% *}
+  ablation=$(echo "$cmd" | sed -n 's/.*--ablation \([a-z_]*\).*/_\1/p')
+  seed=$(echo "$cmd" | sed -n 's/.*--seed \([0-9]*\).*/\1/p')
+  tag="$(basename "$script" .py)${ablation}_seed${seed}"
   echo "== $tag"
   $PY $cmd > "logs/$tag.log" 2>&1 &
   while [ "$(jobs -rp | wc -l)" -ge "$JOBS" ]; do sleep 5; done
