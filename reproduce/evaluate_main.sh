@@ -3,7 +3,7 @@
 #
 # Expects the main-paper checkpoints under outputs/ (see README, "Checkpoints").
 # Evaluation is deterministic: with the released checkpoints, every output
-# below should be identical to the committed version (check with `git status`).
+# below should match the committed version (check with reproduce/check_outputs.py results/).
 set -euo pipefail
 cd "$(dirname "$0")/.."
 PY=${PY:-.venv/bin/python}
@@ -58,4 +58,4 @@ $PY scripts/eval_belief_evidence.py
 echo "== Figure 7: distractor robustness"
 $PY scripts/eval_distractor.py --paper
 
-echo "Done. Compare against the paper's reference outputs with: git status results/"
+echo "Done. Compare against the paper's reference outputs with: $PY reproduce/check_outputs.py results/"

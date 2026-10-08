@@ -64,7 +64,16 @@ python3.12 -m venv .venv
 ```
 
 All downloads are attached to the
-[v1.0 release](https://github.com/NigelDoering/structured-machine-tom/releases/tag/v1.0).
+[v1.0 release](https://github.com/NigelDoering/structured-machine-tom/releases/tag/v1.0), with
+SHA-256 checksums in `SHA256SUMS.txt`. From the repository root:
+
+```bash
+REL=https://github.com/NigelDoering/structured-machine-tom/releases/download/v1.0
+curl -LO $REL/smtom-bdibottleneck.pt            # the trained model (3 MB)
+curl -LO $REL/checkpoints-paper.tar.gz          # optional: exact reproduction of the main paper (43 MB)
+curl -LO $REL/checkpoints-appendix.tar.gz       # optional: appendix models and dense dataset (191 MB)
+curl -LO $REL/diagnostics-intermediate.tar.gz   # optional: per-episode appendix outputs (82 MB)
+```
 
 ### Use the trained model
 
@@ -111,12 +120,15 @@ Regenerate every main-paper figure and table, then check them against the commit
 
 ```bash
 reproduce/evaluate_main.sh
-git status results/        # nothing modified = exact reproduction
+.venv/bin/python reproduce/check_outputs.py results/
 ```
 
 The repository already contains the paper's outputs (`results/`, `outputs/**/accuracy_results.json`,
-`outputs/diagnostics/**`). Every reproduction script writes to the same paths, so `git status`
-and `git diff` show exactly what changed.
+`outputs/diagnostics/**`), and every reproduction script writes to the same paths.
+`reproduce/check_outputs.py` compares the regenerated files with the committed versions:
+figures by their pixels and tables/JSON by their numbers. (Use it rather than `git status`:
+PNG files can differ byte-for-byte across installs of the image libraries even when every
+pixel is identical.)
 
 Training uses CUDA if available, then Apple-silicon MPS, then CPU (`--no-cuda` forces CPU).
 Set `PY=/path/to/python` to use an interpreter other than `.venv/bin/python` in the
@@ -128,7 +140,7 @@ Set `PY=/path/to/python` to use an interpreter other than `.venv/bin/python` in 
 
 | Level | What you run | What you get | Applies to |
 |---|---|---|---|
-| **A. Re-evaluate the released checkpoints** | `checkpoints-paper.tar.gz`, then `reproduce/evaluate_main.sh` (minutes) | **Bit-identical** figures, tables, and JSON. Evaluation is fully deterministic. | All main-paper results: Figs. 2–4 and 6–19, Tables 1–3, 14–15, 20–22 |
+| **A. Re-evaluate the released checkpoints** | `checkpoints-paper.tar.gz`, then `reproduce/evaluate_main.sh` (minutes) | **Identical** numbers and pixel-identical figures. Evaluation is fully deterministic. | All main-paper results: Figs. 2–4 and 6–19, Tables 1–3, 14–15, 20–22 |
 | **B. Regenerate the appendix diagnostics from released checkpoints** | `STAGES="diagnostics aggregate trajectory tables" reproduce/appendix.sh` | Paper tables bit-identical; other diagnostic files match to floating-point precision (≈10⁻⁶) on different hardware | Tables 12, 13, 16–19 and the channel-use numbers in Appendix F |
 | **C. Retrain from scratch** | `reproduce/train_main.sh`, then `reproduce/evaluate_main.sh` | **Statistically equivalent, not identical** results (Section 9) | Everything |
 | **D. Regenerate the dataset** | `scripts/run_simulation.py` | A dataset drawn from the same generative process, **not** the paper's exact episodes (Section 4.3) | Data |

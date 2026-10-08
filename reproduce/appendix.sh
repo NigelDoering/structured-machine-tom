@@ -102,4 +102,4 @@ if has tables; then
   $PY scripts/cf_bootstrap_ci.py
   $PY scripts/make_trajectory_cf_tables.py
 fi
-echo "Done. Compare with: git status outputs/diagnostics results/trajectory_counterfactuals"
+echo "Done. Compare with: $PY reproduce/check_outputs.py outputs/diagnostics results/trajectory_counterfactuals"

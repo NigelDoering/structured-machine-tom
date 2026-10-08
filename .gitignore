@@ -56,3 +56,4 @@ outputs/diagnostics/analyses/**/usage_kl_distribution.csv
 outputs/diagnostics/analyses/**/RUN_COMMANDS.md
 outputs/diagnostics/analyses/**/manifest.csv
 outputs/diagnostics/analyses/_chunks_*/
+SHA256SUMS.txt
