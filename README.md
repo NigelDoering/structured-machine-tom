@@ -19,6 +19,26 @@ walking graph, where the true beliefs and desires of every simulated agent are k
 
 ---
 
+## Citation
+
+If you use this code, data, or the trained models, please cite:
+
+```bibtex
+@article{doering2026structured,
+  title   = {Structured Machine Theory of Mind from Agent Trajectories},
+  author  = {Doering, Nigel F. and Malladi, Rahath and Sangwan, Arshia and Tonmoy, M Tanjid Hasan
+             and Doan, Jacob and Danks, David and Rahman, Tauhidur},
+  journal = {Transactions on Machine Learning Research},
+  issn    = {2835-8856},
+  year    = {2026},
+  url     = {https://openreview.net/forum?id=PfSNLg0zcK}
+}
+```
+
+GitHub's "Cite this repository" button (from [`CITATION.cff`](CITATION.cff)) gives the same reference.
+
+---
+
 ## Contents
 
 1. [Quick start](#1-quick-start)
@@ -31,7 +51,6 @@ walking graph, where the true beliefs and desires of every simulated agent are k
 8. [Appendix diagnostics](#8-appendix-diagnostics)
 9. [What to expect when you retrain](#9-what-to-expect-when-you-retrain)
 10. [Known small discrepancies with the paper](#10-known-small-discrepancies-with-the-paper)
-11. [Citation](#11-citation)
 
 ---
 
@@ -427,22 +446,6 @@ These are rounding or reporting differences. None affects a conclusion.
   threshold. Neither enters a reported number.
 
 ---
-
-## 11. Citation
-
-```bibtex
-@article{doering2026structured,
-  title   = {Structured Machine Theory of Mind from Agent Trajectories},
-  author  = {Doering, Nigel F. and Malladi, Rahath and Sangwan, Arshia and Tonmoy, M Tanjid Hasan
-             and Doan, Jacob and Danks, David and Rahman, Tauhidur},
-  journal = {Transactions on Machine Learning Research},
-  issn    = {2835-8856},
-  year    = {2026},
-  url     = {https://openreview.net/forum?id=PfSNLg0zcK}
-}
-```
-
-GitHub's "Cite this repository" button (from [`CITATION.cff`](CITATION.cff)) gives the same reference.
 
 ## License
 
