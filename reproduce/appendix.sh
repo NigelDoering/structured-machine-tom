@@ -67,11 +67,26 @@ fi
 if has trajectory; then
   echo "== Simulator-resampled and model-planned counterfactual trajectories (Tables 16-19)"
   $PY scripts/cf_simulator_rollouts.py
-  $PY scripts/cf_simulator_rollouts.py --bnk-ckpt $D/dense/bdi_bottleneck/seed_0/best.pt \
-    --splits-dir $DENSE_SPLITS --router-k 1 --out-dir $D/analyses/dense_true_counterfactual_rollouts
   $PY scripts/cf_model_planned_paths.py
-  $PY scripts/cf_model_planned_paths.py --bnk-ckpt $D/dense/bdi_bottleneck/seed_0/best.pt \
-    --splits-dir $DENSE_SPLITS --out-dir $D/analyses/dense_model_planned_counterfactual_paths
+  # The dense runs were made in 120-record chunks per split, then merged. Each chunk restarts
+  # the simulator RNG, so the same chunking is needed to reproduce the reported numbers.
+  for script in cf_simulator_rollouts cf_model_planned_paths; do
+    case $script in
+      cf_simulator_rollouts)  out=$D/analyses/dense_true_counterfactual_rollouts ;;
+      cf_model_planned_paths) out=$D/analyses/dense_model_planned_counterfactual_paths ;;
+    esac
+    chunks=$out/_chunks
+    for split in test test_new_agent; do
+      for start in 0 120 240 360 480 600 720 840; do
+        $PY scripts/$script.py --bnk-ckpt $D/dense/bdi_bottleneck/seed_0/best.pt \
+          --splits-dir $DENSE_SPLITS --splits $split --router-k 1 \
+          --record-start $start --record-limit 120 --chunk-label ${split}_${start} \
+          --out-dir $chunks/${split}_${start}
+      done
+    done
+    $PY scripts/$script.py --merge-chunks $chunks --out-dir $out
+    rm -rf "$chunks"
+  done
   $PY scripts/robustness_model_planned.py --phase sparse
   $PY scripts/robustness_model_planned.py --phase dense --splits-dir $DENSE_SPLITS --seeds 0 5 10
 fi
