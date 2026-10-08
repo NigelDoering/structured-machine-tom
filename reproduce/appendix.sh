@@ -5,8 +5,9 @@
 #
 # These experiments use their own 30-epoch model families, separate from the 300-epoch
 # main-paper models. The robustness and model-planned commands match the recorded runs;
-# the dense-split, base-family and per-stage diagnostic invocations are reconstructed
-# from script defaults and run notes (marked "reconstructed" below).
+# the dense-split and base-family training commands are reconstructed from script defaults
+# and run notes (marked "reconstructed" below). The evaluation stages (diagnostics, aggregate,
+# trajectory, tables) are verified to regenerate the committed outputs from the released checkpoints.
 #
 # Run stage by stage: STAGES="data train diagnostics robustness aggregate trajectory tables"
 # (default: all). "robustness" retrains the sweeps; "aggregate" only evaluates their checkpoints.
@@ -45,7 +46,7 @@ if has diagnostics; then
   $PY scripts/diag_belief_dose_response.py
   $PY scripts/diag_belief_sensitivity.py
   $PY scripts/eval_aux_baseline.py
-  echo "== Same diagnostics on the dense seed-0 BDIBottleneck (reconstructed)"
+  echo "== Same diagnostics on the dense seed-0 BDIBottleneck"
   DB=$D/dense/bdi_bottleneck/seed_0/best.pt
   $PY scripts/diag_dense_false_beliefs.py
   $PY scripts/diag_belief_attribution.py   --bnk-ckpt $DB --splits-dir $DENSE_SPLITS --out-dir $D/analyses/dense_current_belief_attribution

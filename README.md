@@ -110,7 +110,7 @@ Set `PY=/path/to/python` to use an interpreter other than `.venv/bin/python` in 
 | Level | What you run | What you get | Applies to |
 |---|---|---|---|
 | **A. Re-evaluate the released checkpoints** | `checkpoints-paper.tar.gz`, then `reproduce/evaluate_main.sh` (minutes) | **Bit-identical** figures, tables, and JSON. Evaluation is fully deterministic. | All main-paper results: Figs. 2–4 and 6–19, Tables 1–3, 14–15, 20–22 |
-| **B. Regenerate the appendix diagnostics from released checkpoints** | `STAGES="diagnostics aggregate trajectory tables" reproduce/appendix.sh` | Same numbers as the committed reference outputs | Tables 12, 13, 16–19 and the channel-use numbers in Appendix F |
+| **B. Regenerate the appendix diagnostics from released checkpoints** | `STAGES="diagnostics aggregate trajectory tables" reproduce/appendix.sh` | Paper tables bit-identical; other diagnostic files match to floating-point precision (≈10⁻⁶) on different hardware | Tables 12, 13, 16–19 and the channel-use numbers in Appendix F |
 | **C. Retrain from scratch** | `reproduce/train_main.sh`, then `reproduce/evaluate_main.sh` | **Statistically equivalent, not identical** results (Section 9) | Everything |
 | **D. Regenerate the dataset** | `scripts/run_simulation.py` | A dataset drawn from the same generative process, **not** the paper's exact episodes (Section 4.3) | Data |
 
@@ -349,9 +349,13 @@ stability guards (math SDPA attention and non-foreach AdamW) and a smaller batch
 unstable seeds. The guards are off by default; enable them with `BDI_FORCE_MATH_SDP=1` and
 `BDI_DISABLE_FOREACH_OPT=1` (see `scripts/diag_utils.py`). On other hardware the same commands
 run unchanged.
-The commands for the robustness sweeps and model-planned paths are the recorded ones. The
-dense-data generation, base-family training, and per-stage diagnostic invocations in
-`appendix.sh` are reconstructed from the scripts' defaults and are marked as such in the script.
+
+Every evaluation command in `appendix.sh` (the `diagnostics`, `aggregate`, `trajectory`, and
+`tables` stages) has been checked: run from a fresh clone on the released checkpoints, it
+regenerates the committed outputs. The robustness-sweep training commands are the recorded
+ones. The dense-dataset generation and the base-family training commands are reconstructed from
+the scripts' defaults and run notes, are marked as such in the script, and have not been rerun
+(Section 9 covers what to expect from retraining).
 
 ---
 
@@ -415,6 +419,12 @@ These are rounding or reporting differences. None affects a conclusion.
   sample evaluation contexts differently, so BDIBottleneck's top-1 accuracy differs slightly
   between the two figures (e.g. 57.0% vs. 55.6% at full reveal on `test`). Compare models
   within a figure.
+- **Appendix diagnostics across hardware.** The appendix models were evaluated on CUDA for the
+  paper; rerunning on other hardware reproduces every paper table exactly, while the
+  underlying diagnostic files differ by floating-point noise (≈10⁻⁶). A few threshold-borderline
+  values flip: one of 6,504 dense dose-response episodes changes its monotonicity flag, and in two
+  robustness runs one belief entry out of ~9,000 in a held-out-belief split crosses the 0.5
+  threshold. Neither enters a reported number.
 
 ---
 
