@@ -44,3 +44,15 @@ outputs/diagnostics/dense/splits/
 # Archives (checkpoints ship as GitHub release assets, not in git)
 *.zip
 *.tar.gz
+
+# Per-episode diagnostic outputs and run logs (large; shipped in diagnostics-intermediate.tar.gz)
+outputs/diagnostics/analyses/**/planned_paths.csv
+outputs/diagnostics/analyses/**/goal_changes.csv
+outputs/diagnostics/analyses/**/model_vs_simulator.csv
+outputs/diagnostics/analyses/**/cf_rollout_attempts.csv
+outputs/diagnostics/analyses/**/*episode_level.csv
+outputs/diagnostics/analyses/**/entry_level.csv
+outputs/diagnostics/analyses/**/usage_kl_distribution.csv
+outputs/diagnostics/analyses/**/RUN_COMMANDS.md
+outputs/diagnostics/analyses/**/manifest.csv
+outputs/diagnostics/analyses/_chunks_*/
