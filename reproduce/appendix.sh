@@ -8,11 +8,12 @@
 # the dense-split, base-family and per-stage diagnostic invocations are reconstructed
 # from script defaults and run notes (marked "reconstructed" below).
 #
-# Run stage by stage: STAGES="data train diagnostics robustness trajectory tables" (default: all).
+# Run stage by stage: STAGES="data train diagnostics robustness aggregate trajectory tables"
+# (default: all). "robustness" retrains the sweeps; "aggregate" only evaluates their checkpoints.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 PY=${PY:-.venv/bin/python}
-STAGES=${STAGES:-"data train diagnostics robustness trajectory tables"}
+STAGES=${STAGES:-"data train diagnostics robustness aggregate trajectory tables"}
 D=outputs/diagnostics
 DENSE_SPLITS=$D/dense/splits
 has() { [[ " $STAGES " == *" $1 "* ]]; }
@@ -58,9 +59,13 @@ fi
 if has robustness; then
   echo "== Same-budget robustness sweeps (Table 13): sparse 4 configs x 5 seeds, dense 2 configs x 3 seeds"
   $PY scripts/robustness_sweep.py --phase sparse
-  $PY scripts/robustness_aggregate.py --phase sparse
   $PY scripts/robustness_sweep.py --phase dense --splits-dir $DENSE_SPLITS \
     --configs default_weighted balanced_focal --seeds 0 5 10
+fi
+
+if has aggregate; then
+  echo "== Evaluate the robustness checkpoints (Table 13)"
+  $PY scripts/robustness_aggregate.py --phase sparse
   $PY scripts/robustness_aggregate.py --phase dense --splits-dir $DENSE_SPLITS
 fi
 
@@ -75,7 +80,7 @@ if has trajectory; then
       cf_simulator_rollouts)  out=$D/analyses/dense_true_counterfactual_rollouts ;;
       cf_model_planned_paths) out=$D/analyses/dense_model_planned_counterfactual_paths ;;
     esac
-    chunks=$out/_chunks
+    chunks=$D/analyses/_chunks_$script   # outside $out: the merge skips files under $out
     for split in test test_new_agent; do
       for start in 0 120 240 360 480 600 720 840; do
         $PY scripts/$script.py --bnk-ckpt $D/dense/bdi_bottleneck/seed_0/best.pt \

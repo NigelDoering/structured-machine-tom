@@ -110,7 +110,7 @@ Set `PY=/path/to/python` to use an interpreter other than `.venv/bin/python` in 
 | Level | What you run | What you get | Applies to |
 |---|---|---|---|
 | **A. Re-evaluate the released checkpoints** | `checkpoints-paper.tar.gz`, then `reproduce/evaluate_main.sh` (minutes) | **Bit-identical** figures, tables, and JSON. Evaluation is fully deterministic. | All main-paper results: Figs. 2–4 and 6–19, Tables 1–3, 14–15, 20–22 |
-| **B. Regenerate the appendix diagnostics from released checkpoints** | `STAGES="diagnostics trajectory tables" reproduce/appendix.sh` | Same numbers as the committed reference outputs | Tables 12, 13, 16–19 and the channel-use numbers in Appendix F |
+| **B. Regenerate the appendix diagnostics from released checkpoints** | `STAGES="diagnostics aggregate trajectory tables" reproduce/appendix.sh` | Same numbers as the committed reference outputs | Tables 12, 13, 16–19 and the channel-use numbers in Appendix F |
 | **C. Retrain from scratch** | `reproduce/train_main.sh`, then `reproduce/evaluate_main.sh` | **Statistically equivalent, not identical** results (Section 9) | Everything |
 | **D. Regenerate the dataset** | `scripts/run_simulation.py` | A dataset drawn from the same generative process, **not** the paper's exact episodes (Section 4.3) | Data |
 
@@ -321,11 +321,12 @@ Its dataset is generated into `outputs/diagnostics/dense/splits/` (not committed
 shortest-path routing (`--router-k 1`).
 
 `reproduce/appendix.sh` runs the full pipeline in stages
-(`data`, `train`, `diagnostics`, `robustness`, `trajectory`, `tables`):
+(`data`, `train`, `diagnostics`, `robustness`, `aggregate`, `trajectory`, `tables`);
+`robustness` retrains the sweeps, while `aggregate` only evaluates their checkpoints:
 
 ```bash
 reproduce/appendix.sh                                            # everything (retrains)
-STAGES="diagnostics trajectory tables" reproduce/appendix.sh     # from the released appendix checkpoints
+STAGES="diagnostics aggregate trajectory tables" reproduce/appendix.sh  # from the released appendix checkpoints
 ```
 
 | Paper item | Scripts | Reference output |
