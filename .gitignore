@@ -40,3 +40,7 @@ logs/
 # Regenerated (non-canonical) datasets
 data/splits_regenerated/
 outputs/diagnostics/dense/splits/
+
+# Archives (checkpoints ship as GitHub release assets, not in git)
+*.zip
+*.tar.gz
