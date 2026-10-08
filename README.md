@@ -339,8 +339,8 @@ with the same code:
   describes BDIBottleneck as competitive with AuxContext.
 - *Desire counterfactuals (Fig. 3, Table 2).* These are very stable. Across seeds 0/5/10 the
   mean off-diagonal Δ is 0.144–0.151 (test) and 0.132–0.134 (new agent) with model-derived
-  prototypes, 0.332–0.344 and 0.319–0.333 with handcrafted ones, and 27–30 of 30 category
-  pairs are significant in every case.
+  prototypes, 0.332–0.344 and 0.319–0.333 with handcrafted ones, and 26–30 of the 30 category
+  pairs are significant for every checkpoint we evaluated (including a retrained one, below).
 - *Belief counterfactuals (Fig. 4, Table 3).* These effects are small, so they vary more.
   Across seeds 0/5/10 the 50% goal drop is −0.009 to −0.015 (test) and −0.022 to −0.028
   (new agent). The new-agent effect is significant for every seed (episode-level
@@ -351,7 +351,15 @@ with the same code:
 - *Deterministic everywhere.* VisitFrequency, BToM (Informed), the dataset statistics, and
   every evaluation of a fixed checkpoint.
 
-**Retraining check.** RETRAIN_RESULT_PLACEHOLDER
+**Retraining check.** We retrained BDIBottleneck seed 5 from scratch with this repository
+(`--epochs 300 --seed 5`, Apple M4 Max, MPS) and compared it with the released seed-5
+checkpoint. Both selected epoch 216. Validation top-1 was 58.1% vs. 57.5% (original), and test
+top-1 was 37.3% vs. 37.7% at 50% reveal and 58.8% vs. 58.3% at full reveal. The belief
+intervention gave a goal drop of −0.0092 vs. −0.0093 (test) and −0.0287 vs. −0.0283 (new
+agent); the new-agent effect stayed at episode-level p = 5×10⁻⁵ and agent-clustered p = 10⁻⁴.
+Desire Δ moved by less than 0.002, and the significant category pairs were 29/30 vs. 29/30
+(test) and 26/30 vs. 27/30 (new agent). The held-in agent-clustered belief p-value, the most
+fragile statistic in the paper, moved from 0.027 to 0.063.
 
 ---
 
