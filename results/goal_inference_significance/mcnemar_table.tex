@@ -1,0 +1,30 @@
+\begin{table}[t]
+  \centering
+  \scriptsize
+  \setlength{\tabcolsep}{4pt}
+  \caption{McNemar's exact test (BDIBottleneck vs.\ baselines) at 10\% path-fraction increments.  Holm--Bonferroni adjusted $p$-values across 40 tests.  \textbf{Bold} = significant at $\alpha=0.05$.  Top panel: 10--50\%; bottom panel: 60--100\%.}
+  \label{tab:mcnemar_results}
+  \begin{tabular}{llccccc}
+    \toprule
+    Split & Comparison & 10\% & 20\% & 30\% & 40\% & 50\% \\
+    \midrule
+    \multirow{2}{*}{\texttt{test}} & BDI vs.\ GP & \textbf{< 0.001} & \textbf{< 0.001} & 0.282 & \textbf{< 0.001} & \textbf{0.001} \\
+     & BDI vs.\ CTX & 1.000 & 1.000 & 1.000 & 1.000 & 1.000 \\
+    \midrule
+    \multirow{2}{*}{\texttt{test\_new\_agent}} & BDI vs.\ GP & \textbf{0.001} & \textbf{< 0.001} & 0.276 & \textbf{< 0.001} & \textbf{< 0.001} \\
+     & BDI vs.\ CTX & 1.000 & 1.000 & 0.919 & 1.000 & 1.000 \\
+    \bottomrule
+  \end{tabular}
+  \vspace{4pt}
+  \begin{tabular}{llccccc}
+    \toprule
+    Split & Comparison & 60\% & 70\% & 80\% & 90\% & 100\% \\
+    \midrule
+    \multirow{2}{*}{\texttt{test}} & BDI vs.\ GP & \textbf{< 0.001} & \textbf{< 0.001} & \textbf{0.005} & \textbf{0.045} & \textbf{< 0.001} \\
+     & BDI vs.\ CTX & 0.114 & 0.479 & \textbf{0.047} & \textbf{0.007} & 0.145 \\
+    \midrule
+    \multirow{2}{*}{\texttt{test\_new\_agent}} & BDI vs.\ GP & \textbf{< 0.001} & 0.120 & 1.000 & 0.191 & \textbf{0.002} \\
+     & BDI vs.\ CTX & 1.000 & \textbf{0.003} & \textbf{0.004} & \textbf{0.001} & \textbf{0.005} \\
+    \bottomrule
+  \end{tabular}
+\end{table}

@@ -33,3 +33,10 @@ cache/
 *.bbl
 *.blg
 *.toc
+
+# Logs from reproduce/ scripts
+logs/
+
+# Regenerated (non-canonical) datasets
+data/splits_regenerated/
+outputs/diagnostics/dense/splits/

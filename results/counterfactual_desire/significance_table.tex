@@ -1,0 +1,17 @@
+\begin{table}[t]
+  \centering
+  \scriptsize
+  \setlength{\tabcolsep}{3pt}
+  \caption{Desire counterfactual significance at 50\% path reveal. For each episode the mean off-diagonal $\Delta$ is computed as the average change in goal probability mass toward the transplanted category across all five non-matching prototype substitutions. Permutation $p$: one-sided random-sign test (H$_0$: mean\,$=$\,0); sign test $p$: one-sided exact test (H$_0$: median\,$=$\,0); CI: 95\% bootstrap interval. Pairs sig.: off-diagonal (source, target) pairs with mean $\Delta>0$ significant at $\alpha=0.05$ after Holm--Bonferroni correction (30 pairs total).}
+  \label{tab:cf_desire_significance}
+  \begin{tabular}{llrrrrrr}
+    \toprule
+    Split & Prototypes & $n$ & Mean $\Delta$ & 95\% CI & Perm.\ $p$ & Sign test $p$ & Pairs sig. \\
+    \midrule
+    Test            & Model-derived & 480 & 0.151 & [0.145, 0.157] & ${\le}10^{-4}$ & $7.1\times10^{-136}$ & 29/30 \\
+    Test            & Handcrafted   & 480 & 0.344 & [0.335, 0.354] & ${\le}10^{-4}$ & $3.2\times10^{-145}$ & 30/30 \\
+    Test (new agent) & Model-derived & 480 & 0.135 & [0.129, 0.140] & ${\le}10^{-4}$ & $5.9\times10^{-138}$ & 27/30 \\
+    Test (new agent) & Handcrafted   & 480 & 0.333 & [0.324, 0.341] & ${\le}10^{-4}$ & $3.2\times10^{-145}$ & 30/30 \\
+    \bottomrule
+  \end{tabular}
+\end{table}

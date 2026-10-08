@@ -1,0 +1,109 @@
+{
+  "_note": "Defines 5 agent character archetypes. Each character has (1) category_alphas: Dirichlet concentration parameters over the 6 desire categories, and (2) node_alphas: per-category Dirichlet concentration parameters over the POIs within that category. POI ordering matches poi_categories.json exactly. At simulation time, a desire category is sampled from Dirichlet(category_alphas), then a specific destination is sampled from Dirichlet(node_alphas[category]), filtered to only believed-open POIs before sampling. Characters are designed to be maximally spatially discriminable to provide strong desire-attribution signal.",
+  "_category_order": ["attend_class", "get_food", "study", "socialize", "exercise", "rest_home"],
+  "_node_order_per_category": {
+    "attend_class":  ["wlh", "center_hall", "pcynh", "mandeville"],
+    "get_food":      ["64_degrees", "pines", "foodworx", "oceanview"],
+    "study":         ["geisel", "biomedical_lib", "price_center_study", "erc_east"],
+    "socialize":     ["price_center_west", "sun_god_lawn", "the_pub", "sixth_village"],
+    "exercise":      ["rimac", "canyonview", "rimac_pool", "triton_track"],
+    "rest_home":     ["sixth_residences", "warren_residences", "revelle_residences", "off_campus"]
+  },
+  "characters": {
+    "studious_stem": {
+      "description": "A diligent STEM major who structures their day around classes and library time. Rarely socializes or exercises on campus. Strongly prefers the Biomedical Library and ERC quiet study lounge over the main Geisel. Eats quickly and cheaply at Foodworx or Pines, rarely ventures to dining halls across campus.",
+      "category_alphas": {
+        "attend_class": 3.0,
+        "get_food":     1.0,
+        "study":        5.0,
+        "socialize":    0.3,
+        "exercise":     0.4,
+        "rest_home":    0.8
+      },
+      "node_alphas": {
+        "attend_class":  [1.5, 1.0, 3.0, 0.5],
+        "get_food":      [0.5, 2.5, 3.0, 0.5],
+        "study":         [1.5, 3.5, 1.0, 3.0],
+        "socialize":     [1.5, 1.0, 0.5, 1.5],
+        "exercise":      [1.0, 2.0, 0.5, 1.5],
+        "rest_home":     [1.0, 3.0, 1.0, 1.5]
+      }
+    },
+    "social_athlete": {
+      "description": "An extroverted athlete who lives for the gym, the field, and hanging out with friends. Attends class only when necessary and studies minimally. Gravitates to RIMAC for weightlifting and the Triton Track for runs. Socializes at The Pub and Price Center West. Eats big at 64 Degrees or OceanView.",
+      "category_alphas": {
+        "attend_class": 0.5,
+        "get_food":     2.0,
+        "study":        0.4,
+        "socialize":    4.5,
+        "exercise":     4.0,
+        "rest_home":    0.6
+      },
+      "node_alphas": {
+        "attend_class":  [2.0, 1.0, 1.0, 0.5],
+        "get_food":      [3.5, 0.5, 0.5, 3.0],
+        "study":         [2.0, 0.5, 2.5, 0.5],
+        "socialize":     [2.5, 1.0, 3.5, 1.5],
+        "exercise":      [4.0, 1.0, 1.5, 3.5],
+        "rest_home":     [3.0, 1.0, 0.5, 2.0]
+      }
+    },
+    "foodie_socializer": {
+      "description": "A social student who organizes their day around meals and hangouts. Eats at every dining hall, treats food as a social event, and spends afternoons at outdoor campus spaces. Studies just enough to get by. Strongly prefers OceanView Terrace for its views and 64 Degrees for the vibe. Likes Sun God Lawn and Sixth Village for casual hangouts.",
+      "category_alphas": {
+        "attend_class": 0.8,
+        "get_food":     5.0,
+        "study":        0.8,
+        "socialize":    3.5,
+        "exercise":     0.5,
+        "rest_home":    0.4
+      },
+      "node_alphas": {
+        "attend_class":  [1.0, 1.5, 1.0, 1.5],
+        "get_food":      [3.0, 2.0, 1.0, 4.0],
+        "study":         [2.5, 0.5, 2.0, 0.5],
+        "socialize":     [1.5, 4.0, 1.0, 4.5],
+        "exercise":      [1.0, 1.0, 0.5, 2.5],
+        "rest_home":     [2.0, 1.0, 2.0, 1.0]
+      }
+    },
+    "homebody_studier": {
+      "description": "A quiet, introverted student who spends most of their time at home or in a nearby study lounge. Leaves campus as little as possible, preferring to study in their room or at Geisel late at night. When they do leave, it is for a quick meal at Pines (nearest to Revelle) or a late library session. Rarely socializes or exercises.",
+      "category_alphas": {
+        "attend_class": 1.0,
+        "get_food":     0.6,
+        "study":        2.5,
+        "socialize":    0.2,
+        "exercise":     0.2,
+        "rest_home":    6.0
+      },
+      "node_alphas": {
+        "attend_class":  [1.0, 1.5, 1.0, 0.5],
+        "get_food":      [0.5, 4.0, 1.0, 0.5],
+        "study":         [3.5, 1.0, 0.5, 2.0],
+        "socialize":     [1.0, 2.0, 0.5, 1.0],
+        "exercise":      [0.5, 1.5, 0.5, 2.0],
+        "rest_home":     [1.0, 1.0, 4.0, 2.5]
+      }
+    },
+    "well_rounded": {
+      "description": "A balanced student with no strong dominant tendency. Attends class reliably, studies a moderate amount, socializes casually, and hits the gym a few times a week. Uses all dining halls roughly equally. Represents the modal UCSD student and provides a useful behavioral baseline for comparison against more extreme archetypes.",
+      "category_alphas": {
+        "attend_class": 2.0,
+        "get_food":     2.0,
+        "study":        2.0,
+        "socialize":    2.0,
+        "exercise":     1.5,
+        "rest_home":    1.5
+      },
+      "node_alphas": {
+        "attend_class":  [2.0, 2.0, 2.0, 1.5],
+        "get_food":      [2.0, 2.0, 2.0, 2.0],
+        "study":         [3.0, 1.5, 2.0, 1.5],
+        "socialize":     [2.0, 2.0, 1.5, 2.0],
+        "exercise":      [2.5, 2.0, 1.5, 2.0],
+        "rest_home":     [2.0, 2.0, 2.0, 1.5]
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "phase": "sparse",
+  "dry_run": false,
+  "planned_or_run_rows": 40,
+  "status_counts": {
+    "completed": 9,
+    "completed_reused": 31
+  }
+}

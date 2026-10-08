@@ -1,0 +1,9 @@
+model,split,desire_kl
+AuxSupervisedContextGoalPredictor,test,0.2777779996395111
+BDIBottleneck,test,0.31158447265625
+AuxSupervisedContextGoalPredictor,test_new_agent,0.5877676010131836
+BDIBottleneck,test_new_agent,0.6109215617179871
+AuxSupervisedContextGoalPredictor,test_bh,0.2574861943721771
+BDIBottleneck,test_bh,0.29048264026641846
+AuxSupervisedContextGoalPredictor,test_new_agent_bh,0.5420907139778137
+BDIBottleneck,test_new_agent_bh,0.5901291370391846

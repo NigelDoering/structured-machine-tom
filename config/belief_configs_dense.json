@@ -1,0 +1,88 @@
+{
+  "_note": "Dense false-belief configurations (appendix stress test). Default scripts still use config/belief_configs.json unless --belief-config is passed. All configs leave at least one believed-open POI per category.",
+  "episodes_per_config": 25,
+  "training": {
+    "B0": {
+      "description": "Baseline all-open belief state.",
+      "false_beliefs": []
+    },
+    "B1": {
+      "description": "Original sparse study disruption.",
+      "false_beliefs": ["geisel", "biomedical_lib", "price_center_study"]
+    },
+    "B2": {
+      "description": "Original sparse food disruption.",
+      "false_beliefs": ["64_degrees", "pines", "foodworx"]
+    },
+    "B3": {
+      "description": "Original sparse exercise disruption.",
+      "false_beliefs": ["rimac", "canyonview", "rimac_pool"]
+    },
+    "B4": {
+      "description": "Original sparse social disruption.",
+      "false_beliefs": ["price_center_west", "sun_god_lawn", "the_pub"]
+    },
+    "B5": {
+      "description": "Original sparse compound study plus food disruption.",
+      "false_beliefs": ["geisel", "biomedical_lib", "64_degrees", "pines"]
+    },
+    "B6": {
+      "description": "Original sparse compound exercise plus social disruption.",
+      "false_beliefs": ["rimac", "canyonview", "rimac_pool", "price_center_west", "sun_god_lawn"]
+    },
+    "B7": {
+      "description": "Original sparse compound class plus study disruption.",
+      "false_beliefs": ["wlh", "pcynh", "center_hall", "geisel", "biomedical_lib"]
+    },
+    "BM1": {
+      "description": "Medium class, study, and food disruption with 6 closed POIs.",
+      "false_beliefs": ["wlh", "pcynh", "geisel", "biomedical_lib", "64_degrees", "pines"]
+    },
+    "BM2": {
+      "description": "Medium social, exercise, and food disruption with 6 closed POIs.",
+      "false_beliefs": ["price_center_west", "the_pub", "rimac", "canyonview", "rimac_pool", "foodworx"]
+    },
+    "BM3": {
+      "description": "Medium four-category disruption with 8 closed POIs.",
+      "false_beliefs": ["wlh", "center_hall", "64_degrees", "pines", "geisel", "price_center_study", "price_center_west", "sun_god_lawn"]
+    },
+    "BM4": {
+      "description": "Medium exercise, rest, study, and food disruption with 8 closed POIs.",
+      "false_beliefs": ["rimac", "canyonview", "rimac_pool", "erc_africa_hall", "muir_residences", "biomedical_lib", "foodworx", "oceanview"]
+    },
+    "BD1": {
+      "description": "Dense class, study, food, and social disruption with 11 closed POIs.",
+      "false_beliefs": ["wlh", "center_hall", "pcynh", "geisel", "biomedical_lib", "price_center_study", "64_degrees", "pines", "foodworx", "price_center_west", "sun_god_lawn"]
+    },
+    "BD2": {
+      "description": "Dense exercise, social, food, rest, and study disruption with 11 closed POIs.",
+      "false_beliefs": ["rimac", "canyonview", "rimac_pool", "price_center_west", "sun_god_lawn", "the_pub", "64_degrees", "oceanview", "erc_africa_hall", "muir_residences", "geisel"]
+    },
+    "BD3": {
+      "description": "Dense balanced two-per-category disruption with 12 closed POIs.",
+      "false_beliefs": ["wlh", "center_hall", "64_degrees", "pines", "geisel", "biomedical_lib", "price_center_west", "the_pub", "rimac", "canyonview", "erc_africa_hall", "sixth_residences"]
+    },
+    "BD4": {
+      "description": "Dense mixed high-signal disruption with 12 closed POIs.",
+      "false_beliefs": ["geisel", "biomedical_lib", "price_center_study", "rimac", "canyonview", "rimac_pool", "wlh", "pcynh", "price_center_west", "sixth_village", "64_degrees", "warren_residences"]
+    }
+  },
+  "held_out": {
+    "BH0": {
+      "description": "Original held-out compound study plus exercise disruption.",
+      "false_beliefs": ["geisel", "price_center_study", "rimac", "canyonview", "rimac_pool"]
+    },
+    "BH1": {
+      "description": "Original held-out compound food plus social disruption.",
+      "false_beliefs": ["64_degrees", "pines", "oceanview", "the_pub", "sixth_village"]
+    },
+    "BHD0": {
+      "description": "Held-out dense food, social, exercise, study, and rest disruption with 12 closed POIs.",
+      "false_beliefs": ["64_degrees", "pines", "foodworx", "price_center_west", "sun_god_lawn", "the_pub", "rimac", "canyonview", "rimac_pool", "geisel", "biomedical_lib", "erc_africa_hall"]
+    },
+    "BHD1": {
+      "description": "Held-out dense class, study, food, rest, social, and exercise disruption with 12 closed POIs.",
+      "false_beliefs": ["wlh", "center_hall", "pcynh", "geisel", "biomedical_lib", "price_center_study", "64_degrees", "oceanview", "muir_residences", "sixth_residences", "sun_god_lawn", "triton_track"]
+    }
+  }
+}

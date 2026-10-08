@@ -1,0 +1,23 @@
+\begin{table}[t]
+  \centering
+  \scriptsize
+  \setlength{\tabcolsep}{4pt}
+  \caption{Model-planned versus simulator-resampled counterfactual agreement at 50\% path reveal. Top-1 is the percentage of cases where the model-selected counterfactual goal equals the simulator-resampled goal; Top-5 is the percentage where the simulator goal appears in the model's edited top-5. Values are means with 95\% bootstrap confidence intervals clustered by seed-agent. $p_{\mathrm{shuffle}}$ is the Holm-adjusted within-group shuffled-goal test for Top-5 agreement above chance.}
+  \label{tab:model_planned_agreement}
+  \resizebox{\linewidth}{!}{%
+  \begin{tabular}{lllrrrrr}
+    \toprule
+    Regime & Split & Type & $n$ & Top-1 (\%) & Top-5 (\%) & $p^{\mathrm{cf}}(g_{\mathrm{sim}})$ & $p_{\mathrm{shuffle}}$ \\
+    \midrule
+    dense & test & belief & 2880 & 6.4 [4.7, 8.1] & 34.7 [29.3, 40.6] & 0.0606 [0.0512, 0.0706] & 0.0016 \\
+    dense & test & desire & 2880 & 18.1 [15.4, 20.9] & 43.3 [40.1, 46.4] & 0.0924 [0.0834, 0.1011] & 0.0016 \\
+    dense & test\_new\_agent & belief & 2880 & 7.7 [6.2, 9.2] & 36.8 [32.5, 41.0] & 0.0628 [0.0571, 0.0685] & 0.0016 \\
+    dense & test\_new\_agent & desire & 2880 & 21.5 [18.6, 24.4] & 47.2 [44.2, 50.1] & 0.1005 [0.0919, 0.1092] & 0.0016 \\
+    sparse & test & belief & 2400 & 8.9 [7.4, 10.4] & 37.2 [33.7, 41.2] & 0.0567 [0.0520, 0.0620] & 0.0016 \\
+    sparse & test & desire & 2400 & 9.0 [7.5, 10.6] & 33.4 [30.5, 36.4] & 0.0537 [0.0516, 0.0558] & 0.0016 \\
+    sparse & test\_new\_agent & belief & 2400 & 8.2 [6.5, 10.0] & 35.1 [31.7, 38.5] & 0.0537 [0.0510, 0.0565] & 0.0016 \\
+    sparse & test\_new\_agent & desire & 2400 & 9.5 [8.0, 11.0] & 36.0 [32.9, 39.0] & 0.0547 [0.0527, 0.0569] & 0.0016 \\
+    \bottomrule
+  \end{tabular}%
+  }
+\end{table}

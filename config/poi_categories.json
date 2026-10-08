@@ -1,0 +1,54 @@
+{
+  "_note": "Canonical POI registry. Ground truth: all POIs are always available. The only source of unavailability is a false belief in the agent's belief vector. node_id values are OSM node IDs snapped from ucsd_walk.graphml. POI order within each category is stable and indexes into node_alpha vectors in agent_characters.json.",
+  "graph_source": "bdi_tom/data/raw/ucsd_walk.graphml",
+  "categories": {
+    "attend_class": {
+      "pois": [
+        { "id": "wlh",         "name": "Warren Lecture Hall",  "lat": 32.8811, "lon": -117.2367, "node_id": 469084112   },
+        { "id": "center_hall", "name": "Center Hall",          "lat": 32.8776, "lon": -117.2387, "node_id": 446616503   },
+        { "id": "pcynh",       "name": "Pepper Canyon Hall",   "lat": 32.8753, "lon": -117.2358, "node_id": 445988301   },
+        { "id": "mandeville",  "name": "Mandeville Center",    "lat": 32.8784, "lon": -117.2419, "node_id": 10825141106 }
+      ]
+    },
+    "get_food": {
+      "pois": [
+        { "id": "64_degrees", "name": "64 Degrees (Sixth College Dining)", "lat": 32.8843, "lon": -117.2393, "node_id": 10287752410 },
+        { "id": "pines",      "name": "Pines (Revelle Dining)",            "lat": 32.8727, "lon": -117.2404, "node_id": 13041963734 },
+        { "id": "foodworx",   "name": "Foodworx (Price Center)",           "lat": 32.8797, "lon": -117.2364, "node_id": 9552931552  },
+        { "id": "oceanview",  "name": "OceanView Terrace",                 "lat": 32.8868, "lon": -117.2407, "node_id": 10287844481 }
+      ]
+    },
+    "study": {
+      "pois": [
+        { "id": "geisel",             "name": "Geisel Library",               "lat": 32.8810, "lon": -117.2374, "node_id": 12316437956 },
+        { "id": "biomedical_lib",     "name": "Biomedical Library",           "lat": 32.8762, "lon": -117.2320, "node_id": 12256231265 },
+        { "id": "price_center_study", "name": "Price Center East (Study)",    "lat": 32.8793, "lon": -117.2360, "node_id": 10299258505 },
+        { "id": "erc_east",           "name": "ERC East (Quiet Study Lounge)","lat": 32.8855, "lon": -117.2389, "node_id": 10287701219 }
+      ]
+    },
+    "socialize": {
+      "pois": [
+        { "id": "price_center_west", "name": "Price Center West",            "lat": 32.8797, "lon": -117.2370, "node_id": 10299192807 },
+        { "id": "sun_god_lawn",      "name": "Sun God Lawn",                 "lat": 32.8790, "lon": -117.2365, "node_id": 10296096680 },
+        { "id": "the_pub",           "name": "The Pub at Price Center",      "lat": 32.8795, "lon": -117.2363, "node_id": 9552931518  },
+        { "id": "sixth_village",     "name": "Sixth College Village",        "lat": 32.8843, "lon": -117.2388, "node_id": 2738236087  }
+      ]
+    },
+    "exercise": {
+      "pois": [
+        { "id": "rimac",        "name": "RIMAC Arena (Main Gym)",        "lat": 32.8895, "lon": -117.2400, "node_id": 9842899686  },
+        { "id": "canyonview",   "name": "Canyonview Recreation Center",  "lat": 32.8769, "lon": -117.2334, "node_id": 447635692   },
+        { "id": "rimac_pool",   "name": "RIMAC Pool",                    "lat": 32.8898, "lon": -117.2397, "node_id": 9842899685  },
+        { "id": "triton_track", "name": "Triton Track (RIMAC Field)",    "lat": 32.8889, "lon": -117.2391, "node_id": 5973380951  }
+      ]
+    },
+    "rest_home": {
+      "pois": [
+        { "id": "erc_africa_hall",   "name": "ERC Africa Hall (Roosevelt College)", "lat": 32.8858, "lon": -117.2415, "node_id": 356168059   },
+        { "id": "muir_residences",   "name": "Muir College Residences",             "lat": 32.8770, "lon": -117.2348, "node_id": 5529658591  },
+        { "id": "sixth_residences",  "name": "Sixth College Residences",            "lat": 32.8847, "lon": -117.2392, "node_id": 10287734758 },
+        { "id": "warren_residences", "name": "Warren College Residences",           "lat": 32.8836, "lon": -117.2359, "node_id": 10312101736 }
+      ]
+    }
+  }
+}

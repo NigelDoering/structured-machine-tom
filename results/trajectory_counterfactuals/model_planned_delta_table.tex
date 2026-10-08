@@ -1,0 +1,23 @@
+\begin{table}[t]
+  \centering
+  \scriptsize
+  \setlength{\tabcolsep}{3pt}
+  \caption{Model-planned trajectory counterfactual probability deltas at 50\% path reveal. Values are means with 95\% bootstrap confidence intervals clustered by seed-agent. $\Delta_{\mathrm{orig}}=p^{\mathrm{cf}}(g_{\mathrm{orig}})-p(g_{\mathrm{orig}})$; $\Delta_{\mathrm{sel}}=p^{\mathrm{cf}}(g_{\mathrm{cf}})-p(g_{\mathrm{orig}})$; $\Delta_{\mathrm{sim}}=p^{\mathrm{cf}}(g_{\mathrm{sim}})-p(g_{\mathrm{orig}})$; and $\Delta_{\mathrm{sim-cf}}=p^{\mathrm{cf}}(g_{\mathrm{sim}})-p^{\mathrm{cf}}(g_{\mathrm{cf}})$, where $g_{\mathrm{cf}}$ is the model-selected counterfactual goal and $g_{\mathrm{sim}}$ is the simulator-resampled counterfactual goal.}
+  \label{tab:model_planned_delta}
+  \resizebox{\linewidth}{!}{%
+  \begin{tabular}{llllrrrr}
+    \toprule
+    Regime & Split & Type & Channel & $\Delta_{\mathrm{orig}}$ & $\Delta_{\mathrm{sel}}$ & $\Delta_{\mathrm{sim}}$ & $\Delta_{\mathrm{sim-cf}}$ \\
+    \midrule
+    dense & test & belief & predicted & -0.0112 [-0.0137, -0.0088] & 0.0855 [0.0765, 0.0949] & -0.0870 [-0.0968, -0.0774] & -0.1725 [-0.1815, -0.1641] \\
+    dense & test & desire & predicted & -0.0705 [-0.0836, -0.0582] & 0.1220 [0.1042, 0.1391] & -0.0552 [-0.0719, -0.0399] & -0.1772 [-0.1888, -0.1652] \\
+    dense & test\_new\_agent & belief & predicted & -0.0095 [-0.0115, -0.0075] & 0.0976 [0.0883, 0.1074] & -0.0653 [-0.0736, -0.0576] & -0.1629 [-0.1719, -0.1543] \\
+    dense & test\_new\_agent & desire & predicted & -0.0532 [-0.0641, -0.0427] & 0.1467 [0.1275, 0.1647] & -0.0276 [-0.0420, -0.0137] & -0.1743 [-0.1880, -0.1602] \\
+    sparse & test & belief & predicted & 0.0016 [0.0009, 0.0022] & 0.0453 [0.0430, 0.0476] & -0.0234 [-0.0274, -0.0196] & -0.0687 [-0.0737, -0.0642] \\
+    sparse & test & desire & predicted & -0.0182 [-0.0223, -0.0148] & 0.0450 [0.0386, 0.0512] & -0.0265 [-0.0333, -0.0202] & -0.0715 [-0.0781, -0.0653] \\
+    sparse & test\_new\_agent & belief & predicted & 0.0010 [0.0004, 0.0016] & 0.0487 [0.0459, 0.0517] & -0.0216 [-0.0259, -0.0175] & -0.0703 [-0.0756, -0.0655] \\
+    sparse & test\_new\_agent & desire & predicted & -0.0140 [-0.0171, -0.0113] & 0.0484 [0.0430, 0.0537] & -0.0205 [-0.0253, -0.0157] & -0.0689 [-0.0757, -0.0626] \\
+    \bottomrule
+  \end{tabular}%
+  }
+\end{table}

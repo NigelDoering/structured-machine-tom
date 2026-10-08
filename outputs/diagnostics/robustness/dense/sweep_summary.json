@@ -1,0 +1,8 @@
+{
+  "phase": "dense",
+  "dry_run": false,
+  "planned_or_run_rows": 12,
+  "status_counts": {
+    "completed": 12
+  }
+}

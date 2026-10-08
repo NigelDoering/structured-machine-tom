@@ -1,0 +1,1502 @@
+[
+  {
+    "agent_id": "new_foodie_socializer_0",
+    "episode_idx": 0,
+    "belief_config": "B7",
+    "goal_poi": "oceanview",
+    "distractor_poi": "erc_east",
+    "min_dist_m": 95.6,
+    "closest_path_idx": 18,
+    "path_len": 32
+  },
+  {
+    "agent_id": "new_foodie_socializer_0",
+    "episode_idx": 0,
+    "belief_config": "B4",
+    "goal_poi": "oceanview",
+    "distractor_poi": "erc_east",
+    "min_dist_m": 95.6,
+    "closest_path_idx": 16,
+    "path_len": 30
+  },
+  {
+    "agent_id": "new_foodie_socializer_0",
+    "episode_idx": 0,
+    "belief_config": "B1",
+    "goal_poi": "oceanview",
+    "distractor_poi": "erc_east",
+    "min_dist_m": 95.6,
+    "closest_path_idx": 16,
+    "path_len": 30
+  },
+  {
+    "agent_id": "new_foodie_socializer_0",
+    "episode_idx": 3,
+    "belief_config": "B6",
+    "goal_poi": "oceanview",
+    "distractor_poi": "erc_east",
+    "min_dist_m": 95.6,
+    "closest_path_idx": 35,
+    "path_len": 49
+  },
+  {
+    "agent_id": "new_foodie_socializer_1",
+    "episode_idx": 2,
+    "belief_config": "B4",
+    "goal_poi": "erc_africa_hall",
+    "distractor_poi": "erc_east",
+    "min_dist_m": 95.6,
+    "closest_path_idx": 32,
+    "path_len": 47
+  },
+  {
+    "agent_id": "new_foodie_socializer_1",
+    "episode_idx": 3,
+    "belief_config": "B4",
+    "goal_poi": "64_degrees",
+    "distractor_poi": "erc_east",
+    "min_dist_m": 91.0,
+    "closest_path_idx": 17,
+    "path_len": 28
+  },
+  {
+    "agent_id": "new_foodie_socializer_1",
+    "episode_idx": 1,
+    "belief_config": "B0",
+    "goal_poi": "sixth_village",
+    "distractor_poi": "price_center_study",
+    "min_dist_m": 47.1,
+    "closest_path_idx": 0,
+    "path_len": 37
+  },
+  {
+    "agent_id": "new_foodie_socializer_1",
+    "episode_idx": 1,
+    "belief_config": "B6",
+    "goal_poi": "sixth_village",
+    "distractor_poi": "price_center_study",
+    "min_dist_m": 14.9,
+    "closest_path_idx": 0,
+    "path_len": 36
+  },
+  {
+    "agent_id": "new_foodie_socializer_1",
+    "episode_idx": 2,
+    "belief_config": "B3",
+    "goal_poi": "pines",
+    "distractor_poi": "price_center_study",
+    "min_dist_m": 14.9,
+    "closest_path_idx": 0,
+    "path_len": 30
+  },
+  {
+    "agent_id": "new_foodie_socializer_1",
+    "episode_idx": 1,
+    "belief_config": "B2",
+    "goal_poi": "erc_africa_hall",
+    "distractor_poi": "erc_east",
+    "min_dist_m": 88.1,
+    "closest_path_idx": 5,
+    "path_len": 25
+  },
+  {
+    "agent_id": "new_foodie_socializer_2",
+    "episode_idx": 0,
+    "belief_config": "B3",
+    "goal_poi": "sixth_village",
+    "distractor_poi": "center_hall",
+    "min_dist_m": 95.1,
+    "closest_path_idx": 6,
+    "path_len": 46
+  },
+  {
+    "agent_id": "new_foodie_socializer_2",
+    "episode_idx": 0,
+    "belief_config": "B6",
+    "goal_poi": "sixth_village",
+    "distractor_poi": "center_hall",
+    "min_dist_m": 95.1,
+    "closest_path_idx": 6,
+    "path_len": 46
+  },
+  {
+    "agent_id": "new_foodie_socializer_2",
+    "episode_idx": 3,
+    "belief_config": "B6",
+    "goal_poi": "64_degrees",
+    "distractor_poi": "center_hall",
+    "min_dist_m": 95.1,
+    "closest_path_idx": 20,
+    "path_len": 57
+  },
+  {
+    "agent_id": "new_foodie_socializer_2",
+    "episode_idx": 0,
+    "belief_config": "B4",
+    "goal_poi": "sixth_village",
+    "distractor_poi": "center_hall",
+    "min_dist_m": 95.1,
+    "closest_path_idx": 6,
+    "path_len": 46
+  },
+  {
+    "agent_id": "new_foodie_socializer_2",
+    "episode_idx": 0,
+    "belief_config": "B2",
+    "goal_poi": "oceanview",
+    "distractor_poi": "center_hall",
+    "min_dist_m": 0.0,
+    "closest_path_idx": 7,
+    "path_len": 55
+  },
+  {
+    "agent_id": "new_foodie_socializer_2",
+    "episode_idx": 0,
+    "belief_config": "B7",
+    "goal_poi": "oceanview",
+    "distractor_poi": "center_hall",
+    "min_dist_m": 79.3,
+    "closest_path_idx": 8,
+    "path_len": 53
+  },
+  {
+    "agent_id": "new_homebody_studier_0",
+    "episode_idx": 0,
+    "belief_config": "B4",
+    "goal_poi": "erc_east",
+    "distractor_poi": "64_degrees",
+    "min_dist_m": 32.5,
+    "closest_path_idx": 0,
+    "path_len": 13
+  },
+  {
+    "agent_id": "new_homebody_studier_0",
+    "episode_idx": 1,
+    "belief_config": "B4",
+    "goal_poi": "warren_residences",
+    "distractor_poi": "64_degrees",
+    "min_dist_m": 48.4,
+    "closest_path_idx": 6,
+    "path_len": 19
+  },
+  {
+    "agent_id": "new_homebody_studier_0",
+    "episode_idx": 3,
+    "belief_config": "B4",
+    "goal_poi": "erc_africa_hall",
+    "distractor_poi": "64_degrees",
+    "min_dist_m": 32.5,
+    "closest_path_idx": 0,
+    "path_len": 19
+  },
+  {
+    "agent_id": "new_homebody_studier_0",
+    "episode_idx": 0,
+    "belief_config": "B2",
+    "goal_poi": "warren_residences",
+    "distractor_poi": "64_degrees",
+    "min_dist_m": 28.7,
+    "closest_path_idx": 3,
+    "path_len": 19
+  },
+  {
+    "agent_id": "new_homebody_studier_0",
+    "episode_idx": 2,
+    "belief_config": "B7",
+    "goal_poi": "sixth_residences",
+    "distractor_poi": "64_degrees",
+    "min_dist_m": 85.7,
+    "closest_path_idx": 14,
+    "path_len": 25
+  },
+  {
+    "agent_id": "new_homebody_studier_0",
+    "episode_idx": 0,
+    "belief_config": "B5",
+    "goal_poi": "erc_east",
+    "distractor_poi": "64_degrees",
+    "min_dist_m": 32.5,
+    "closest_path_idx": 0,
+    "path_len": 7
+  },
+  {
+    "agent_id": "new_homebody_studier_0",
+    "episode_idx": 2,
+    "belief_config": "B5",
+    "goal_poi": "erc_east",
+    "distractor_poi": "64_degrees",
+    "min_dist_m": 32.5,
+    "closest_path_idx": 0,
+    "path_len": 7
+  },
+  {
+    "agent_id": "new_homebody_studier_0",
+    "episode_idx": 3,
+    "belief_config": "B6",
+    "goal_poi": "warren_residences",
+    "distractor_poi": "64_degrees",
+    "min_dist_m": 48.4,
+    "closest_path_idx": 17,
+    "path_len": 31
+  },
+  {
+    "agent_id": "new_homebody_studier_0",
+    "episode_idx": 0,
+    "belief_config": "B1",
+    "goal_poi": "warren_residences",
+    "distractor_poi": "64_degrees",
+    "min_dist_m": 28.7,
+    "closest_path_idx": 3,
+    "path_len": 18
+  },
+  {
+    "agent_id": "new_homebody_studier_0",
+    "episode_idx": 2,
+    "belief_config": "B1",
+    "goal_poi": "warren_residences",
+    "distractor_poi": "64_degrees",
+    "min_dist_m": 36.5,
+    "closest_path_idx": 0,
+    "path_len": 16
+  },
+  {
+    "agent_id": "new_homebody_studier_0",
+    "episode_idx": 3,
+    "belief_config": "B1",
+    "goal_poi": "erc_africa_hall",
+    "distractor_poi": "64_degrees",
+    "min_dist_m": 48.4,
+    "closest_path_idx": 15,
+    "path_len": 33
+  },
+  {
+    "agent_id": "new_homebody_studier_0",
+    "episode_idx": 2,
+    "belief_config": "B3",
+    "goal_poi": "sixth_residences",
+    "distractor_poi": "64_degrees",
+    "min_dist_m": 93.9,
+    "closest_path_idx": 40,
+    "path_len": 51
+  },
+  {
+    "agent_id": "new_homebody_studier_0",
+    "episode_idx": 3,
+    "belief_config": "B3",
+    "goal_poi": "erc_africa_hall",
+    "distractor_poi": "64_degrees",
+    "min_dist_m": 32.5,
+    "closest_path_idx": 0,
+    "path_len": 18
+  },
+  {
+    "agent_id": "new_homebody_studier_1",
+    "episode_idx": 1,
+    "belief_config": "B0",
+    "goal_poi": "geisel",
+    "distractor_poi": "sixth_village",
+    "min_dist_m": 7.3,
+    "closest_path_idx": 4,
+    "path_len": 34
+  },
+  {
+    "agent_id": "new_homebody_studier_1",
+    "episode_idx": 2,
+    "belief_config": "B1",
+    "goal_poi": "erc_east",
+    "distractor_poi": "price_center_west",
+    "min_dist_m": 49.1,
+    "closest_path_idx": 16,
+    "path_len": 51
+  },
+  {
+    "agent_id": "new_homebody_studier_1",
+    "episode_idx": 3,
+    "belief_config": "B1",
+    "goal_poi": "sixth_residences",
+    "distractor_poi": "sixth_village",
+    "min_dist_m": 76.0,
+    "closest_path_idx": 2,
+    "path_len": 13
+  },
+  {
+    "agent_id": "new_homebody_studier_1",
+    "episode_idx": 1,
+    "belief_config": "B2",
+    "goal_poi": "sixth_residences",
+    "distractor_poi": "price_center_west",
+    "min_dist_m": 49.1,
+    "closest_path_idx": 16,
+    "path_len": 44
+  },
+  {
+    "agent_id": "new_homebody_studier_1",
+    "episode_idx": 2,
+    "belief_config": "B2",
+    "goal_poi": "erc_africa_hall",
+    "distractor_poi": "sixth_village",
+    "min_dist_m": 45.9,
+    "closest_path_idx": 1,
+    "path_len": 18
+  },
+  {
+    "agent_id": "new_homebody_studier_1",
+    "episode_idx": 1,
+    "belief_config": "B5",
+    "goal_poi": "erc_africa_hall",
+    "distractor_poi": "sixth_village",
+    "min_dist_m": 12.0,
+    "closest_path_idx": 15,
+    "path_len": 33
+  },
+  {
+    "agent_id": "new_homebody_studier_1",
+    "episode_idx": 3,
+    "belief_config": "B5",
+    "goal_poi": "sixth_residences",
+    "distractor_poi": "sixth_village",
+    "min_dist_m": 88.1,
+    "closest_path_idx": 21,
+    "path_len": 32
+  },
+  {
+    "agent_id": "new_homebody_studier_1",
+    "episode_idx": 1,
+    "belief_config": "B4",
+    "goal_poi": "erc_africa_hall",
+    "distractor_poi": "sixth_village",
+    "min_dist_m": 45.9,
+    "closest_path_idx": 1,
+    "path_len": 19
+  },
+  {
+    "agent_id": "new_homebody_studier_1",
+    "episode_idx": 2,
+    "belief_config": "B4",
+    "goal_poi": "price_center_study",
+    "distractor_poi": "price_center_west",
+    "min_dist_m": 71.6,
+    "closest_path_idx": 37,
+    "path_len": 48
+  },
+  {
+    "agent_id": "new_homebody_studier_1",
+    "episode_idx": 1,
+    "belief_config": "B6",
+    "goal_poi": "erc_east",
+    "distractor_poi": "sixth_village",
+    "min_dist_m": 8.2,
+    "closest_path_idx": 3,
+    "path_len": 14
+  },
+  {
+    "agent_id": "new_homebody_studier_1",
+    "episode_idx": 3,
+    "belief_config": "B6",
+    "goal_poi": "erc_east",
+    "distractor_poi": "sixth_village",
+    "min_dist_m": 37.6,
+    "closest_path_idx": 2,
+    "path_len": 13
+  },
+  {
+    "agent_id": "new_homebody_studier_2",
+    "episode_idx": 0,
+    "belief_config": "B1",
+    "goal_poi": "pcynh",
+    "distractor_poi": "sixth_village",
+    "min_dist_m": 7.3,
+    "closest_path_idx": 4,
+    "path_len": 54
+  },
+  {
+    "agent_id": "new_homebody_studier_2",
+    "episode_idx": 3,
+    "belief_config": "B1",
+    "goal_poi": "sixth_residences",
+    "distractor_poi": "price_center_west",
+    "min_dist_m": 49.1,
+    "closest_path_idx": 16,
+    "path_len": 49
+  },
+  {
+    "agent_id": "new_homebody_studier_2",
+    "episode_idx": 3,
+    "belief_config": "B2",
+    "goal_poi": "sixth_residences",
+    "distractor_poi": "price_center_west",
+    "min_dist_m": 49.1,
+    "closest_path_idx": 21,
+    "path_len": 51
+  },
+  {
+    "agent_id": "new_homebody_studier_2",
+    "episode_idx": 0,
+    "belief_config": "B5",
+    "goal_poi": "mandeville",
+    "distractor_poi": "sixth_village",
+    "min_dist_m": 7.3,
+    "closest_path_idx": 4,
+    "path_len": 40
+  },
+  {
+    "agent_id": "new_homebody_studier_2",
+    "episode_idx": 1,
+    "belief_config": "B5",
+    "goal_poi": "sixth_residences",
+    "distractor_poi": "sixth_village",
+    "min_dist_m": 73.8,
+    "closest_path_idx": 31,
+    "path_len": 42
+  },
+  {
+    "agent_id": "new_homebody_studier_2",
+    "episode_idx": 2,
+    "belief_config": "B5",
+    "goal_poi": "mandeville",
+    "distractor_poi": "sixth_village",
+    "min_dist_m": 0.0,
+    "closest_path_idx": 5,
+    "path_len": 42
+  },
+  {
+    "agent_id": "new_homebody_studier_2",
+    "episode_idx": 3,
+    "belief_config": "B5",
+    "goal_poi": "sixth_residences",
+    "distractor_poi": "sixth_village",
+    "min_dist_m": 88.1,
+    "closest_path_idx": 29,
+    "path_len": 40
+  },
+  {
+    "agent_id": "new_homebody_studier_2",
+    "episode_idx": 1,
+    "belief_config": "B3",
+    "goal_poi": "warren_residences",
+    "distractor_poi": "the_pub",
+    "min_dist_m": 59.0,
+    "closest_path_idx": 0,
+    "path_len": 23
+  },
+  {
+    "agent_id": "new_homebody_studier_2",
+    "episode_idx": 0,
+    "belief_config": "B0",
+    "goal_poi": "pcynh",
+    "distractor_poi": "sixth_village",
+    "min_dist_m": 7.3,
+    "closest_path_idx": 4,
+    "path_len": 54
+  },
+  {
+    "agent_id": "new_homebody_studier_2",
+    "episode_idx": 3,
+    "belief_config": "B0",
+    "goal_poi": "mandeville",
+    "distractor_poi": "sixth_village",
+    "min_dist_m": 7.3,
+    "closest_path_idx": 4,
+    "path_len": 40
+  },
+  {
+    "agent_id": "new_homebody_studier_2",
+    "episode_idx": 0,
+    "belief_config": "B6",
+    "goal_poi": "warren_residences",
+    "distractor_poi": "sixth_village",
+    "min_dist_m": 0.0,
+    "closest_path_idx": 5,
+    "path_len": 19
+  },
+  {
+    "agent_id": "new_homebody_studier_2",
+    "episode_idx": 1,
+    "belief_config": "B6",
+    "goal_poi": "mandeville",
+    "distractor_poi": "price_center_west",
+    "min_dist_m": 0.0,
+    "closest_path_idx": 23,
+    "path_len": 40
+  },
+  {
+    "agent_id": "new_homebody_studier_2",
+    "episode_idx": 2,
+    "belief_config": "B6",
+    "goal_poi": "sixth_residences",
+    "distractor_poi": "sixth_village",
+    "min_dist_m": 88.1,
+    "closest_path_idx": 34,
+    "path_len": 45
+  },
+  {
+    "agent_id": "new_homebody_studier_2",
+    "episode_idx": 3,
+    "belief_config": "B6",
+    "goal_poi": "warren_residences",
+    "distractor_poi": "sixth_village",
+    "min_dist_m": 7.3,
+    "closest_path_idx": 4,
+    "path_len": 17
+  },
+  {
+    "agent_id": "new_homebody_studier_2",
+    "episode_idx": 0,
+    "belief_config": "B7",
+    "goal_poi": "mandeville",
+    "distractor_poi": "sixth_village",
+    "min_dist_m": 0.0,
+    "closest_path_idx": 5,
+    "path_len": 42
+  },
+  {
+    "agent_id": "new_homebody_studier_2",
+    "episode_idx": 1,
+    "belief_config": "B7",
+    "goal_poi": "warren_residences",
+    "distractor_poi": "price_center_west",
+    "min_dist_m": 71.6,
+    "closest_path_idx": 19,
+    "path_len": 37
+  },
+  {
+    "agent_id": "new_homebody_studier_2",
+    "episode_idx": 2,
+    "belief_config": "B7",
+    "goal_poi": "sixth_residences",
+    "distractor_poi": "sixth_village",
+    "min_dist_m": 83.9,
+    "closest_path_idx": 8,
+    "path_len": 19
+  },
+  {
+    "agent_id": "new_homebody_studier_2",
+    "episode_idx": 3,
+    "belief_config": "B7",
+    "goal_poi": "warren_residences",
+    "distractor_poi": "sixth_village",
+    "min_dist_m": 7.3,
+    "closest_path_idx": 4,
+    "path_len": 18
+  },
+  {
+    "agent_id": "new_homebody_studier_2",
+    "episode_idx": 0,
+    "belief_config": "B4",
+    "goal_poi": "center_hall",
+    "distractor_poi": "sixth_village",
+    "min_dist_m": 0.0,
+    "closest_path_idx": 5,
+    "path_len": 42
+  },
+  {
+    "agent_id": "new_homebody_studier_2",
+    "episode_idx": 1,
+    "belief_config": "B4",
+    "goal_poi": "sixth_residences",
+    "distractor_poi": "price_center_west",
+    "min_dist_m": 49.1,
+    "closest_path_idx": 12,
+    "path_len": 42
+  },
+  {
+    "agent_id": "new_homebody_studier_2",
+    "episode_idx": 2,
+    "belief_config": "B4",
+    "goal_poi": "pcynh",
+    "distractor_poi": "sixth_village",
+    "min_dist_m": 0.0,
+    "closest_path_idx": 5,
+    "path_len": 51
+  },
+  {
+    "agent_id": "new_social_athlete_0",
+    "episode_idx": 1,
+    "belief_config": "B0",
+    "goal_poi": "rimac",
+    "distractor_poi": "erc_east",
+    "min_dist_m": 6.9,
+    "closest_path_idx": 39,
+    "path_len": 50
+  },
+  {
+    "agent_id": "new_social_athlete_0",
+    "episode_idx": 3,
+    "belief_config": "B0",
+    "goal_poi": "64_degrees",
+    "distractor_poi": "center_hall",
+    "min_dist_m": 95.1,
+    "closest_path_idx": 20,
+    "path_len": 57
+  },
+  {
+    "agent_id": "new_social_athlete_0",
+    "episode_idx": 1,
+    "belief_config": "B1",
+    "goal_poi": "the_pub",
+    "distractor_poi": "erc_east",
+    "min_dist_m": 6.9,
+    "closest_path_idx": 10,
+    "path_len": 50
+  },
+  {
+    "agent_id": "new_social_athlete_0",
+    "episode_idx": 2,
+    "belief_config": "B1",
+    "goal_poi": "rimac",
+    "distractor_poi": "erc_east",
+    "min_dist_m": 6.9,
+    "closest_path_idx": 34,
+    "path_len": 45
+  },
+  {
+    "agent_id": "new_social_athlete_0",
+    "episode_idx": 3,
+    "belief_config": "B1",
+    "goal_poi": "the_pub",
+    "distractor_poi": "erc_east",
+    "min_dist_m": 6.9,
+    "closest_path_idx": 10,
+    "path_len": 50
+  },
+  {
+    "agent_id": "new_social_athlete_0",
+    "episode_idx": 1,
+    "belief_config": "B2",
+    "goal_poi": "price_center_west",
+    "distractor_poi": "erc_east",
+    "min_dist_m": 6.9,
+    "closest_path_idx": 10,
+    "path_len": 45
+  },
+  {
+    "agent_id": "new_social_athlete_0",
+    "episode_idx": 2,
+    "belief_config": "B2",
+    "goal_poi": "rimac",
+    "distractor_poi": "erc_east",
+    "min_dist_m": 6.9,
+    "closest_path_idx": 34,
+    "path_len": 45
+  },
+  {
+    "agent_id": "new_social_athlete_0",
+    "episode_idx": 3,
+    "belief_config": "B2",
+    "goal_poi": "the_pub",
+    "distractor_poi": "erc_east",
+    "min_dist_m": 6.9,
+    "closest_path_idx": 10,
+    "path_len": 50
+  },
+  {
+    "agent_id": "new_social_athlete_0",
+    "episode_idx": 3,
+    "belief_config": "B4",
+    "goal_poi": "rimac",
+    "distractor_poi": "erc_east",
+    "min_dist_m": 6.9,
+    "closest_path_idx": 5,
+    "path_len": 16
+  },
+  {
+    "agent_id": "new_social_athlete_0",
+    "episode_idx": 1,
+    "belief_config": "B5",
+    "goal_poi": "rimac",
+    "distractor_poi": "erc_east",
+    "min_dist_m": 6.9,
+    "closest_path_idx": 39,
+    "path_len": 50
+  },
+  {
+    "agent_id": "new_social_athlete_0",
+    "episode_idx": 2,
+    "belief_config": "B5",
+    "goal_poi": "the_pub",
+    "distractor_poi": "erc_east",
+    "min_dist_m": 6.9,
+    "closest_path_idx": 10,
+    "path_len": 50
+  },
+  {
+    "agent_id": "new_social_athlete_0",
+    "episode_idx": 1,
+    "belief_config": "B6",
+    "goal_poi": "64_degrees",
+    "distractor_poi": "erc_east",
+    "min_dist_m": 13.0,
+    "closest_path_idx": 5,
+    "path_len": 16
+  },
+  {
+    "agent_id": "new_social_athlete_0",
+    "episode_idx": 0,
+    "belief_config": "B7",
+    "goal_poi": "64_degrees",
+    "distractor_poi": "erc_east",
+    "min_dist_m": 91.0,
+    "closest_path_idx": 17,
+    "path_len": 28
+  },
+  {
+    "agent_id": "new_social_athlete_0",
+    "episode_idx": 1,
+    "belief_config": "B7",
+    "goal_poi": "rimac",
+    "distractor_poi": "erc_east",
+    "min_dist_m": 6.9,
+    "closest_path_idx": 11,
+    "path_len": 22
+  },
+  {
+    "agent_id": "new_social_athlete_1",
+    "episode_idx": 2,
+    "belief_config": "B6",
+    "goal_poi": "triton_track",
+    "distractor_poi": "sixth_residences",
+    "min_dist_m": 32.5,
+    "closest_path_idx": 0,
+    "path_len": 18
+  },
+  {
+    "agent_id": "new_social_athlete_1",
+    "episode_idx": 1,
+    "belief_config": "B4",
+    "goal_poi": "sixth_village",
+    "distractor_poi": "sixth_residences",
+    "min_dist_m": 32.5,
+    "closest_path_idx": 0,
+    "path_len": 5
+  },
+  {
+    "agent_id": "new_social_athlete_1",
+    "episode_idx": 2,
+    "belief_config": "B5",
+    "goal_poi": "the_pub",
+    "distractor_poi": "sixth_residences",
+    "min_dist_m": 50.5,
+    "closest_path_idx": 0,
+    "path_len": 36
+  },
+  {
+    "agent_id": "new_social_athlete_1",
+    "episode_idx": 2,
+    "belief_config": "B7",
+    "goal_poi": "64_degrees",
+    "distractor_poi": "sixth_residences",
+    "min_dist_m": 50.5,
+    "closest_path_idx": 0,
+    "path_len": 5
+  },
+  {
+    "agent_id": "new_social_athlete_1",
+    "episode_idx": 3,
+    "belief_config": "B7",
+    "goal_poi": "triton_track",
+    "distractor_poi": "sixth_residences",
+    "min_dist_m": 18.7,
+    "closest_path_idx": 4,
+    "path_len": 16
+  },
+  {
+    "agent_id": "new_social_athlete_1",
+    "episode_idx": 1,
+    "belief_config": "B1",
+    "goal_poi": "triton_track",
+    "distractor_poi": "sixth_residences",
+    "min_dist_m": 45.8,
+    "closest_path_idx": 30,
+    "path_len": 42
+  },
+  {
+    "agent_id": "new_social_athlete_1",
+    "episode_idx": 2,
+    "belief_config": "B1",
+    "goal_poi": "price_center_west",
+    "distractor_poi": "sixth_residences",
+    "min_dist_m": 45.8,
+    "closest_path_idx": 11,
+    "path_len": 37
+  },
+  {
+    "agent_id": "new_social_athlete_1",
+    "episode_idx": 3,
+    "belief_config": "B2",
+    "goal_poi": "price_center_west",
+    "distractor_poi": "sixth_residences",
+    "min_dist_m": 50.5,
+    "closest_path_idx": 0,
+    "path_len": 31
+  },
+  {
+    "agent_id": "new_social_athlete_2",
+    "episode_idx": 1,
+    "belief_config": "B3",
+    "goal_poi": "triton_track",
+    "distractor_poi": "sixth_residences",
+    "min_dist_m": 45.8,
+    "closest_path_idx": 35,
+    "path_len": 47
+  },
+  {
+    "agent_id": "new_social_athlete_2",
+    "episode_idx": 2,
+    "belief_config": "B3",
+    "goal_poi": "the_pub",
+    "distractor_poi": "erc_east",
+    "min_dist_m": 6.9,
+    "closest_path_idx": 7,
+    "path_len": 42
+  },
+  {
+    "agent_id": "new_social_athlete_2",
+    "episode_idx": 3,
+    "belief_config": "B3",
+    "goal_poi": "triton_track",
+    "distractor_poi": "sixth_residences",
+    "min_dist_m": 45.8,
+    "closest_path_idx": 35,
+    "path_len": 47
+  },
+  {
+    "agent_id": "new_social_athlete_2",
+    "episode_idx": 1,
+    "belief_config": "B0",
+    "goal_poi": "canyonview",
+    "distractor_poi": "foodworx",
+    "min_dist_m": 59.0,
+    "closest_path_idx": 0,
+    "path_len": 16
+  },
+  {
+    "agent_id": "new_social_athlete_2",
+    "episode_idx": 1,
+    "belief_config": "B7",
+    "goal_poi": "canyonview",
+    "distractor_poi": "foodworx",
+    "min_dist_m": 59.0,
+    "closest_path_idx": 0,
+    "path_len": 16
+  },
+  {
+    "agent_id": "new_social_athlete_2",
+    "episode_idx": 1,
+    "belief_config": "B6",
+    "goal_poi": "triton_track",
+    "distractor_poi": "sixth_residences",
+    "min_dist_m": 45.8,
+    "closest_path_idx": 35,
+    "path_len": 47
+  },
+  {
+    "agent_id": "new_social_athlete_2",
+    "episode_idx": 2,
+    "belief_config": "B6",
+    "goal_poi": "the_pub",
+    "distractor_poi": "erc_east",
+    "min_dist_m": 6.9,
+    "closest_path_idx": 7,
+    "path_len": 47
+  },
+  {
+    "agent_id": "new_social_athlete_2",
+    "episode_idx": 0,
+    "belief_config": "B1",
+    "goal_poi": "rimac",
+    "distractor_poi": "erc_east",
+    "min_dist_m": 6.9,
+    "closest_path_idx": 49,
+    "path_len": 60
+  },
+  {
+    "agent_id": "new_social_athlete_2",
+    "episode_idx": 1,
+    "belief_config": "B1",
+    "goal_poi": "the_pub",
+    "distractor_poi": "erc_east",
+    "min_dist_m": 6.9,
+    "closest_path_idx": 10,
+    "path_len": 50
+  },
+  {
+    "agent_id": "new_social_athlete_2",
+    "episode_idx": 1,
+    "belief_config": "B2",
+    "goal_poi": "the_pub",
+    "distractor_poi": "biomedical_lib",
+    "min_dist_m": 90.3,
+    "closest_path_idx": 0,
+    "path_len": 18
+  },
+  {
+    "agent_id": "new_social_athlete_2",
+    "episode_idx": 2,
+    "belief_config": "B2",
+    "goal_poi": "canyonview",
+    "distractor_poi": "foodworx",
+    "min_dist_m": 59.0,
+    "closest_path_idx": 0,
+    "path_len": 21
+  },
+  {
+    "agent_id": "new_social_athlete_2",
+    "episode_idx": 3,
+    "belief_config": "B2",
+    "goal_poi": "price_center_west",
+    "distractor_poi": "biomedical_lib",
+    "min_dist_m": 90.3,
+    "closest_path_idx": 0,
+    "path_len": 24
+  },
+  {
+    "agent_id": "new_studious_stem_0",
+    "episode_idx": 1,
+    "belief_config": "B1",
+    "goal_poi": "pcynh",
+    "distractor_poi": "sixth_residences",
+    "min_dist_m": 45.8,
+    "closest_path_idx": 5,
+    "path_len": 51
+  },
+  {
+    "agent_id": "new_studious_stem_0",
+    "episode_idx": 3,
+    "belief_config": "B1",
+    "goal_poi": "pcynh",
+    "distractor_poi": "sixth_residences",
+    "min_dist_m": 45.8,
+    "closest_path_idx": 5,
+    "path_len": 56
+  },
+  {
+    "agent_id": "new_studious_stem_0",
+    "episode_idx": 0,
+    "belief_config": "B2",
+    "goal_poi": "pcynh",
+    "distractor_poi": "the_pub",
+    "min_dist_m": 96.7,
+    "closest_path_idx": 22,
+    "path_len": 45
+  },
+  {
+    "agent_id": "new_studious_stem_0",
+    "episode_idx": 0,
+    "belief_config": "B5",
+    "goal_poi": "pcynh",
+    "distractor_poi": "the_pub",
+    "min_dist_m": 96.7,
+    "closest_path_idx": 22,
+    "path_len": 45
+  },
+  {
+    "agent_id": "new_studious_stem_0",
+    "episode_idx": 0,
+    "belief_config": "B3",
+    "goal_poi": "pcynh",
+    "distractor_poi": "the_pub",
+    "min_dist_m": 96.7,
+    "closest_path_idx": 23,
+    "path_len": 46
+  },
+  {
+    "agent_id": "new_studious_stem_1",
+    "episode_idx": 1,
+    "belief_config": "B7",
+    "goal_poi": "erc_east",
+    "distractor_poi": "64_degrees",
+    "min_dist_m": 93.9,
+    "closest_path_idx": 32,
+    "path_len": 43
+  },
+  {
+    "agent_id": "new_studious_stem_1",
+    "episode_idx": 2,
+    "belief_config": "B7",
+    "goal_poi": "price_center_study",
+    "distractor_poi": "64_degrees",
+    "min_dist_m": 48.4,
+    "closest_path_idx": 6,
+    "path_len": 43
+  },
+  {
+    "agent_id": "new_studious_stem_1",
+    "episode_idx": 3,
+    "belief_config": "B7",
+    "goal_poi": "erc_east",
+    "distractor_poi": "64_degrees",
+    "min_dist_m": 93.9,
+    "closest_path_idx": 32,
+    "path_len": 43
+  },
+  {
+    "agent_id": "new_studious_stem_1",
+    "episode_idx": 1,
+    "belief_config": "B1",
+    "goal_poi": "erc_east",
+    "distractor_poi": "64_degrees",
+    "min_dist_m": 93.9,
+    "closest_path_idx": 28,
+    "path_len": 39
+  },
+  {
+    "agent_id": "new_studious_stem_1",
+    "episode_idx": 2,
+    "belief_config": "B1",
+    "goal_poi": "pcynh",
+    "distractor_poi": "64_degrees",
+    "min_dist_m": 48.4,
+    "closest_path_idx": 6,
+    "path_len": 56
+  },
+  {
+    "agent_id": "new_studious_stem_1",
+    "episode_idx": 3,
+    "belief_config": "B1",
+    "goal_poi": "erc_east",
+    "distractor_poi": "64_degrees",
+    "min_dist_m": 93.9,
+    "closest_path_idx": 45,
+    "path_len": 56
+  },
+  {
+    "agent_id": "new_studious_stem_1",
+    "episode_idx": 2,
+    "belief_config": "B3",
+    "goal_poi": "erc_east",
+    "distractor_poi": "canyonview",
+    "min_dist_m": 6.1,
+    "closest_path_idx": 3,
+    "path_len": 42
+  },
+  {
+    "agent_id": "new_studious_stem_1",
+    "episode_idx": 3,
+    "belief_config": "B3",
+    "goal_poi": "geisel",
+    "distractor_poi": "64_degrees",
+    "min_dist_m": 48.4,
+    "closest_path_idx": 6,
+    "path_len": 36
+  },
+  {
+    "agent_id": "new_studious_stem_1",
+    "episode_idx": 1,
+    "belief_config": "B4",
+    "goal_poi": "price_center_study",
+    "distractor_poi": "canyonview",
+    "min_dist_m": 22.2,
+    "closest_path_idx": 1,
+    "path_len": 19
+  },
+  {
+    "agent_id": "new_studious_stem_1",
+    "episode_idx": 0,
+    "belief_config": "B5",
+    "goal_poi": "erc_east",
+    "distractor_poi": "64_degrees",
+    "min_dist_m": 93.9,
+    "closest_path_idx": 35,
+    "path_len": 46
+  },
+  {
+    "agent_id": "new_studious_stem_1",
+    "episode_idx": 1,
+    "belief_config": "B5",
+    "goal_poi": "price_center_study",
+    "distractor_poi": "64_degrees",
+    "min_dist_m": 48.4,
+    "closest_path_idx": 6,
+    "path_len": 38
+  },
+  {
+    "agent_id": "new_studious_stem_1",
+    "episode_idx": 2,
+    "belief_config": "B5",
+    "goal_poi": "erc_east",
+    "distractor_poi": "64_degrees",
+    "min_dist_m": 93.9,
+    "closest_path_idx": 27,
+    "path_len": 38
+  },
+  {
+    "agent_id": "new_studious_stem_1",
+    "episode_idx": 0,
+    "belief_config": "B0",
+    "goal_poi": "erc_east",
+    "distractor_poi": "64_degrees",
+    "min_dist_m": 93.9,
+    "closest_path_idx": 40,
+    "path_len": 51
+  },
+  {
+    "agent_id": "new_studious_stem_1",
+    "episode_idx": 1,
+    "belief_config": "B2",
+    "goal_poi": "erc_east",
+    "distractor_poi": "64_degrees",
+    "min_dist_m": 93.9,
+    "closest_path_idx": 32,
+    "path_len": 43
+  },
+  {
+    "agent_id": "new_studious_stem_1",
+    "episode_idx": 2,
+    "belief_config": "B2",
+    "goal_poi": "geisel",
+    "distractor_poi": "64_degrees",
+    "min_dist_m": 48.4,
+    "closest_path_idx": 6,
+    "path_len": 31
+  },
+  {
+    "agent_id": "new_studious_stem_1",
+    "episode_idx": 0,
+    "belief_config": "B6",
+    "goal_poi": "erc_east",
+    "distractor_poi": "64_degrees",
+    "min_dist_m": 93.9,
+    "closest_path_idx": 35,
+    "path_len": 46
+  },
+  {
+    "agent_id": "new_studious_stem_1",
+    "episode_idx": 2,
+    "belief_config": "B6",
+    "goal_poi": "erc_east",
+    "distractor_poi": "64_degrees",
+    "min_dist_m": 93.9,
+    "closest_path_idx": 23,
+    "path_len": 34
+  },
+  {
+    "agent_id": "new_studious_stem_1",
+    "episode_idx": 3,
+    "belief_config": "B6",
+    "goal_poi": "price_center_study",
+    "distractor_poi": "64_degrees",
+    "min_dist_m": 48.4,
+    "closest_path_idx": 6,
+    "path_len": 43
+  },
+  {
+    "agent_id": "new_studious_stem_2",
+    "episode_idx": 1,
+    "belief_config": "B1",
+    "goal_poi": "pcynh",
+    "distractor_poi": "sixth_residences",
+    "min_dist_m": 45.8,
+    "closest_path_idx": 5,
+    "path_len": 51
+  },
+  {
+    "agent_id": "new_studious_stem_2",
+    "episode_idx": 0,
+    "belief_config": "B4",
+    "goal_poi": "price_center_study",
+    "distractor_poi": "canyonview",
+    "min_dist_m": 96.7,
+    "closest_path_idx": 3,
+    "path_len": 17
+  },
+  {
+    "agent_id": "new_well_rounded_0",
+    "episode_idx": 3,
+    "belief_config": "B1",
+    "goal_poi": "64_degrees",
+    "distractor_poi": "erc_east",
+    "min_dist_m": 6.9,
+    "closest_path_idx": 10,
+    "path_len": 21
+  },
+  {
+    "agent_id": "new_well_rounded_0",
+    "episode_idx": 2,
+    "belief_config": "B5",
+    "goal_poi": "mandeville",
+    "distractor_poi": "the_pub",
+    "min_dist_m": 14.9,
+    "closest_path_idx": 0,
+    "path_len": 17
+  },
+  {
+    "agent_id": "new_well_rounded_0",
+    "episode_idx": 3,
+    "belief_config": "B7",
+    "goal_poi": "oceanview",
+    "distractor_poi": "the_pub",
+    "min_dist_m": 33.7,
+    "closest_path_idx": 0,
+    "path_len": 47
+  },
+  {
+    "agent_id": "new_well_rounded_0",
+    "episode_idx": 2,
+    "belief_config": "B3",
+    "goal_poi": "mandeville",
+    "distractor_poi": "muir_residences",
+    "min_dist_m": 0.0,
+    "closest_path_idx": 6,
+    "path_len": 29
+  },
+  {
+    "agent_id": "new_well_rounded_0",
+    "episode_idx": 3,
+    "belief_config": "B2",
+    "goal_poi": "oceanview",
+    "distractor_poi": "the_pub",
+    "min_dist_m": 96.7,
+    "closest_path_idx": 0,
+    "path_len": 41
+  },
+  {
+    "agent_id": "new_well_rounded_1",
+    "episode_idx": 0,
+    "belief_config": "B0",
+    "goal_poi": "center_hall",
+    "distractor_poi": "sun_god_lawn",
+    "min_dist_m": 79.2,
+    "closest_path_idx": 23,
+    "path_len": 37
+  },
+  {
+    "agent_id": "new_well_rounded_1",
+    "episode_idx": 1,
+    "belief_config": "B0",
+    "goal_poi": "wlh",
+    "distractor_poi": "sun_god_lawn",
+    "min_dist_m": 94.7,
+    "closest_path_idx": 9,
+    "path_len": 29
+  },
+  {
+    "agent_id": "new_well_rounded_1",
+    "episode_idx": 2,
+    "belief_config": "B0",
+    "goal_poi": "pcynh",
+    "distractor_poi": "sun_god_lawn",
+    "min_dist_m": 94.7,
+    "closest_path_idx": 19,
+    "path_len": 38
+  },
+  {
+    "agent_id": "new_well_rounded_1",
+    "episode_idx": 3,
+    "belief_config": "B0",
+    "goal_poi": "wlh",
+    "distractor_poi": "sun_god_lawn",
+    "min_dist_m": 94.7,
+    "closest_path_idx": 18,
+    "path_len": 40
+  },
+  {
+    "agent_id": "new_well_rounded_1",
+    "episode_idx": 0,
+    "belief_config": "B1",
+    "goal_poi": "pcynh",
+    "distractor_poi": "sun_god_lawn",
+    "min_dist_m": 79.2,
+    "closest_path_idx": 23,
+    "path_len": 46
+  },
+  {
+    "agent_id": "new_well_rounded_1",
+    "episode_idx": 2,
+    "belief_config": "B1",
+    "goal_poi": "wlh",
+    "distractor_poi": "sun_god_lawn",
+    "min_dist_m": 94.7,
+    "closest_path_idx": 9,
+    "path_len": 29
+  },
+  {
+    "agent_id": "new_well_rounded_1",
+    "episode_idx": 3,
+    "belief_config": "B1",
+    "goal_poi": "pcynh",
+    "distractor_poi": "sun_god_lawn",
+    "min_dist_m": 94.7,
+    "closest_path_idx": 21,
+    "path_len": 40
+  },
+  {
+    "agent_id": "new_well_rounded_1",
+    "episode_idx": 0,
+    "belief_config": "B6",
+    "goal_poi": "pcynh",
+    "distractor_poi": "sun_god_lawn",
+    "min_dist_m": 79.2,
+    "closest_path_idx": 22,
+    "path_len": 45
+  },
+  {
+    "agent_id": "new_well_rounded_1",
+    "episode_idx": 3,
+    "belief_config": "B6",
+    "goal_poi": "center_hall",
+    "distractor_poi": "sun_god_lawn",
+    "min_dist_m": 94.8,
+    "closest_path_idx": 15,
+    "path_len": 26
+  },
+  {
+    "agent_id": "new_well_rounded_1",
+    "episode_idx": 0,
+    "belief_config": "B5",
+    "goal_poi": "center_hall",
+    "distractor_poi": "sun_god_lawn",
+    "min_dist_m": 79.2,
+    "closest_path_idx": 22,
+    "path_len": 36
+  },
+  {
+    "agent_id": "new_well_rounded_1",
+    "episode_idx": 1,
+    "belief_config": "B5",
+    "goal_poi": "wlh",
+    "distractor_poi": "sun_god_lawn",
+    "min_dist_m": 94.7,
+    "closest_path_idx": 9,
+    "path_len": 31
+  },
+  {
+    "agent_id": "new_well_rounded_1",
+    "episode_idx": 3,
+    "belief_config": "B5",
+    "goal_poi": "center_hall",
+    "distractor_poi": "sun_god_lawn",
+    "min_dist_m": 94.8,
+    "closest_path_idx": 37,
+    "path_len": 48
+  },
+  {
+    "agent_id": "new_well_rounded_1",
+    "episode_idx": 0,
+    "belief_config": "B3",
+    "goal_poi": "center_hall",
+    "distractor_poi": "sun_god_lawn",
+    "min_dist_m": 79.2,
+    "closest_path_idx": 22,
+    "path_len": 36
+  },
+  {
+    "agent_id": "new_well_rounded_1",
+    "episode_idx": 0,
+    "belief_config": "B4",
+    "goal_poi": "center_hall",
+    "distractor_poi": "sun_god_lawn",
+    "min_dist_m": 79.2,
+    "closest_path_idx": 22,
+    "path_len": 36
+  },
+  {
+    "agent_id": "new_well_rounded_1",
+    "episode_idx": 3,
+    "belief_config": "B4",
+    "goal_poi": "pcynh",
+    "distractor_poi": "sun_god_lawn",
+    "min_dist_m": 94.7,
+    "closest_path_idx": 19,
+    "path_len": 38
+  },
+  {
+    "agent_id": "new_well_rounded_1",
+    "episode_idx": 2,
+    "belief_config": "B7",
+    "goal_poi": "mandeville",
+    "distractor_poi": "erc_africa_hall",
+    "min_dist_m": 75.9,
+    "closest_path_idx": 11,
+    "path_len": 57
+  },
+  {
+    "agent_id": "new_well_rounded_1",
+    "episode_idx": 0,
+    "belief_config": "B2",
+    "goal_poi": "pcynh",
+    "distractor_poi": "sun_god_lawn",
+    "min_dist_m": 79.2,
+    "closest_path_idx": 23,
+    "path_len": 46
+  },
+  {
+    "agent_id": "new_well_rounded_1",
+    "episode_idx": 2,
+    "belief_config": "B2",
+    "goal_poi": "pcynh",
+    "distractor_poi": "biomedical_lib",
+    "min_dist_m": 90.3,
+    "closest_path_idx": 0,
+    "path_len": 19
+  },
+  {
+    "agent_id": "new_well_rounded_2",
+    "episode_idx": 1,
+    "belief_config": "B6",
+    "goal_poi": "center_hall",
+    "distractor_poi": "price_center_study",
+    "min_dist_m": 14.9,
+    "closest_path_idx": 0,
+    "path_len": 13
+  },
+  {
+    "agent_id": "new_well_rounded_2",
+    "episode_idx": 3,
+    "belief_config": "B6",
+    "goal_poi": "muir_residences",
+    "distractor_poi": "erc_east",
+    "min_dist_m": 6.9,
+    "closest_path_idx": 7,
+    "path_len": 52
+  },
+  {
+    "agent_id": "new_well_rounded_2",
+    "episode_idx": 2,
+    "belief_config": "B1",
+    "goal_poi": "wlh",
+    "distractor_poi": "sixth_village",
+    "min_dist_m": 12.0,
+    "closest_path_idx": 16,
+    "path_len": 49
+  },
+  {
+    "agent_id": "new_well_rounded_2",
+    "episode_idx": 3,
+    "belief_config": "B1",
+    "goal_poi": "center_hall",
+    "distractor_poi": "geisel",
+    "min_dist_m": 0.0,
+    "closest_path_idx": 3,
+    "path_len": 29
+  },
+  {
+    "agent_id": "new_well_rounded_2",
+    "episode_idx": 0,
+    "belief_config": "B0",
+    "goal_poi": "wlh",
+    "distractor_poi": "geisel",
+    "min_dist_m": 46.7,
+    "closest_path_idx": 24,
+    "path_len": 35
+  },
+  {
+    "agent_id": "new_well_rounded_2",
+    "episode_idx": 2,
+    "belief_config": "B0",
+    "goal_poi": "pcynh",
+    "distractor_poi": "sixth_village",
+    "min_dist_m": 7.3,
+    "closest_path_idx": 3,
+    "path_len": 53
+  },
+  {
+    "agent_id": "new_well_rounded_2",
+    "episode_idx": 3,
+    "belief_config": "B5",
+    "goal_poi": "the_pub",
+    "distractor_poi": "sixth_village",
+    "min_dist_m": 7.3,
+    "closest_path_idx": 4,
+    "path_len": 39
+  }
+]

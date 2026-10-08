@@ -1,0 +1,51 @@
+{
+  "_note": "Defines belief configurations for simulation. Each config specifies which POI ids the agent falsely believes are closed (value 0). All other POIs are believed open (value 1). Ground truth is always all-open. Each training config closes 3-5 POIs to create strong, unambiguous behavioral disruptions. One POI per disrupted category is intentionally left open so the category is suppressed but not eliminated. Configs B0-B7 are training configs. BH0-BH1 are held-out configs used only at evaluation time.",
+
+  "episodes_per_config": 25,
+
+  "training": {
+    "B0": {
+      "description": "Baseline — all beliefs correct. Pure desire signal with no false belief interference.",
+      "false_beliefs": []
+    },
+    "B1": {
+      "description": "Strong study disruption: 3 of 4 study POIs believed closed (erc_east left open). Forces studious_stem and homebody_studier to either use ERC East or switch categories.",
+      "false_beliefs": ["geisel", "biomedical_lib", "price_center_study"]
+    },
+    "B2": {
+      "description": "Strong food disruption: 3 of 4 food POIs believed closed (oceanview left open). Heavily redirects foodie_socializer and social_athlete away from their preferred dining options.",
+      "false_beliefs": ["64_degrees", "pines", "foodworx"]
+    },
+    "B3": {
+      "description": "Strong exercise disruption: 3 of 4 exercise POIs believed closed (triton_track left open). social_athlete forced to triton_track or abandon exercise entirely.",
+      "false_beliefs": ["rimac", "canyonview", "rimac_pool"]
+    },
+    "B4": {
+      "description": "Strong social disruption: 3 of 4 socialize POIs believed closed (sixth_village left open). Targets the socialize category; social_athlete and foodie_socializer most affected.",
+      "false_beliefs": ["price_center_west", "sun_god_lawn", "the_pub"]
+    },
+    "B5": {
+      "description": "Compound study + food disruption: 2 study + 2 food POIs closed (4 total). Tests multi-category attribution when two strongly held desires are simultaneously suppressed.",
+      "false_beliefs": ["geisel", "biomedical_lib", "64_degrees", "pines"]
+    },
+    "B6": {
+      "description": "Compound exercise + social disruption: 3 exercise + 2 social POIs closed (5 total). Severely disrupts social_athlete whose two dominant categories are nearly eliminated.",
+      "false_beliefs": ["rimac", "canyonview", "rimac_pool", "price_center_west", "sun_god_lawn"]
+    },
+    "B7": {
+      "description": "Compound attend_class + study disruption: 3 class + 2 study POIs closed (5 total). Blocks the two intellectual activity categories most strongly held by studious_stem.",
+      "false_beliefs": ["wlh", "pcynh", "center_hall", "geisel", "biomedical_lib"]
+    }
+  },
+
+  "held_out": {
+    "BH0": {
+      "description": "Held-out compound: study + exercise disruption (2+3=5 POIs). Novel pairing not seen in training — tests whether the model can generalise to new cross-category combinations.",
+      "false_beliefs": ["geisel", "price_center_study", "rimac", "canyonview", "rimac_pool"]
+    },
+    "BH1": {
+      "description": "Held-out compound: food + social disruption (3+2=5 POIs). Novel pairing — tests generalisation to a combination of disrupted categories not co-occurring during training.",
+      "false_beliefs": ["64_degrees", "pines", "oceanview", "the_pub", "sixth_village"]
+    }
+  }
+}

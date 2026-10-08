@@ -1,0 +1,2 @@
+checkpoint,epoch,goal_top1,belief_acc,false_belief_f1,desire_kl,is_best_pt,goal_plus_0.1_belief_f1,goal_plus_0.25_belief_f1,goal_plus_0.5_belief_f1,goal_plus_1.0_belief_f1
+best.pt,28,0.29375,0.6845486283302307,0.37773972602739725,0.33474817449847855,1,0.33152397260273975,0.3881849315068493,0.48261986301369864,0.6714897260273973

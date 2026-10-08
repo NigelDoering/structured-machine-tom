@@ -1,0 +1,23 @@
+\begin{table}[t]
+  \centering
+  \scriptsize
+  \setlength{\tabcolsep}{4pt}
+  \caption{Cluster random-sign tests for the model-planned probability deltas in Table~\ref{tab:model_planned_delta}. Values are Holm-adjusted $p$-values across the displayed 50\% predicted-channel tests. One-sided alternatives are used for the original-goal decrease and model-selected-goal increase; two-sided tests are used for simulator-goal deltas.}
+  \label{tab:model_planned_delta_significance}
+  \resizebox{\linewidth}{!}{%
+  \begin{tabular}{lllrrrr}
+    \toprule
+    Regime & Split & Type & $p_{\mathrm{adj}}(\Delta_{\mathrm{orig}}<0)$ & $p_{\mathrm{adj}}(\Delta_{\mathrm{sel}}>0)$ & $p_{\mathrm{adj}}(\Delta_{\mathrm{sim}}\neq0)$ & $p_{\mathrm{adj}}(\Delta_{\mathrm{sim-cf}}\neq0)$ \\
+    \midrule
+    dense & test & belief & 0.0032 & 0.0032 & 0.0032 & 0.0032 \\
+    dense & test & desire & 0.0032 & 0.0032 & 0.0032 & 0.0032 \\
+    dense & test\_new\_agent & belief & 0.0032 & 0.0032 & 0.0032 & 0.0032 \\
+    dense & test\_new\_agent & desire & 0.0032 & 0.0032 & 0.0032 & 0.0032 \\
+    sparse & test & belief & 1.0000 & 0.0032 & 0.0032 & 0.0032 \\
+    sparse & test & desire & 0.0032 & 0.0032 & 0.0032 & 0.0032 \\
+    sparse & test\_new\_agent & belief & 1.0000 & 0.0032 & 0.0032 & 0.0032 \\
+    sparse & test\_new\_agent & desire & 0.0032 & 0.0032 & 0.0032 & 0.0032 \\
+    \bottomrule
+  \end{tabular}%
+  }
+\end{table}

@@ -1,0 +1,26 @@
+\begin{table}[H]
+  \centering
+  \scriptsize
+  \setlength{\tabcolsep}{2.2pt}
+  \renewcommand{\arraystretch}{1.08}
+  \caption{Top-1 goal inference accuracy (\%) at 10\% path-fraction increments. Aux is the matched auxiliary-supervised context baseline.}
+  \label{tab:goal_inference_top1_tenths}
+  \begin{tabular}{r*{8}{r}}
+    \toprule
+    Path & \multicolumn{4}{c}{Test} & \multicolumn{4}{c}{Test (new agent)} \\
+    \cmidrule(lr){2-5} \cmidrule(lr){6-9}
+    frac. (\%) & Goal & Ctx & Aux & BDI & Goal & Ctx & Aux & BDI \\
+    \midrule
+     10 & 6.11 & 12.22 & 12.85 & 13.89 & 5.35 & 11.32 & 10.63 & 11.74 \\
+     20 & 10.97 & 18.40 & 16.67 & 20.49 & 9.58 & 14.86 & 13.47 & 19.10 \\
+     30 & 16.46 & 21.39 & 21.32 & 24.10 & 16.67 & 20.28 & 18.96 & 23.54 \\
+     40 & 23.54 & 27.57 & 27.22 & 31.74 & 23.12 & 24.65 & 24.38 & 33.26 \\
+     50 & 27.99 & 31.53 & 31.53 & 36.32 & 26.46 & 28.75 & 27.50 & 36.11 \\
+     60 & 30.21 & 37.22 & 35.69 & 40.62 & 29.31 & 33.06 & 32.78 & 41.11 \\
+     70 & 36.39 & 39.03 & 40.62 & 45.49 & 37.99 & 35.83 & 36.60 & 45.97 \\
+     80 & 45.07 & 44.72 & 43.96 & 52.99 & 47.08 & 41.32 & 42.29 & 54.38 \\
+     90 & 51.46 & 47.22 & 48.82 & 58.54 & 50.62 & 45.21 & 45.97 & 60.35 \\
+    100 & 44.38 & 45.76 & 47.92 & 55.56 & 45.69 & 43.33 & 42.78 & 56.88 \\
+    \bottomrule
+  \end{tabular}
+\end{table}

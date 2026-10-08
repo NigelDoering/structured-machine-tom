@@ -1,0 +1,21 @@
+\begin{table}[!htbp]
+  \centering
+  \scriptsize
+  \setlength{\tabcolsep}{2.5pt}
+  \caption{Top-1 accuracy (\%) at 25/50/75/100\% path reveal for belief heldout splits. AuxContext is the unbottlenecked context model trained with the same auxiliary desire/belief losses as BDIBottleneck. \underline{Underline}: BToM (Informed), approximate upper bound on achievable accuracy. \textbf{Bold}: best result per column among learned models.}
+  \label{tab:goal_inference_top1_quarters_bh}
+  \begin{tabular}{lrrrrrrrr}
+    \toprule
+    & \multicolumn{4}{c}{Test (belief heldout)} & \multicolumn{4}{c}{Test (new agent, belief heldout)} \\
+    \cmidrule(lr){2-5} \cmidrule(lr){6-9}
+    Model & 25\% & 50\% & 75\% & 100\% & 25\% & 50\% & 75\% & 100\% \\
+    \midrule
+    VisitFrequency & 13.33 & 13.33 & 13.33 & 13.33 & 14.17 & 14.17 & 14.17 & 14.17 \\
+    \textit{BToM (Informed) [approximate upper bound]} & \underline{24.79} & \underline{33.96} & \underline{48.33} & \underline{94.38} & \underline{29.79} & \underline{39.79} & \underline{58.33} & \underline{94.17} \\
+    GoalPredictor & 12.50 & 25.83 & 40.42 & 42.50 & 10.35 & 27.50 & 41.04 & 43.82 \\
+    ContextGoalPredictor & 17.36 & 26.32 & 38.75 & 41.25 & 15.35 & 28.26 & 37.57 & 41.53 \\
+    \shortstack[l]{AuxContext\\(aux. sup.)} & 16.25 & 28.47 & 40.28 & 43.61 & \textbf{17.50} & 28.82 & 40.90 & 44.86 \\
+    BDIBottleneck (Ours) & \textbf{19.44} & \textbf{34.38} & \textbf{47.92} & \textbf{51.87} & 17.29 & \textbf{37.99} & \textbf{52.29} & \textbf{55.90} \\
+    \bottomrule
+  \end{tabular}
+\end{table}

@@ -1,0 +1,1008 @@
+{
+  "test": {
+    "top_k": 3,
+    "n_total_episodes": 480,
+    "n_filtered_episodes": 206,
+    "fractions": {
+      "0.25": {
+        "fraction": 0.25,
+        "n_episodes": 206,
+        "mean_alt_gain": 0.011984839078485238,
+        "std_alt_gain": 0.054171166547928765,
+        "mean_goal_drop": -0.01997690801893008,
+        "std_goal_drop": 0.05085583890329527,
+        "per_category": {
+          "attend_class": {
+            "n_episodes": 17,
+            "alt_gain_mean": -0.016077178201692945,
+            "alt_gain_se": 0.006828806746064135,
+            "goal_drop_mean": -0.025603733737679088,
+            "goal_drop_se": 0.0029137780479723584
+          },
+          "get_food": {
+            "n_episodes": 34,
+            "alt_gain_mean": 0.010926047894075704,
+            "alt_gain_se": 0.008328192008996826,
+            "goal_drop_mean": -0.0034271207473733846,
+            "goal_drop_se": 0.010009043001953747
+          },
+          "study": {
+            "n_episodes": 37,
+            "alt_gain_mean": 0.018898972520538657,
+            "alt_gain_se": 0.005128625779454158,
+            "goal_drop_mean": -0.027322102205928515,
+            "goal_drop_se": 0.006664406361416636
+          },
+          "socialize": {
+            "n_episodes": 34,
+            "alt_gain_mean": -0.013395172112402232,
+            "alt_gain_se": 0.0065597234361512696,
+            "goal_drop_mean": -0.03249053700881846,
+            "goal_drop_se": 0.006706975181743689
+          },
+          "exercise": {
+            "n_episodes": 29,
+            "alt_gain_mean": 0.05768029524246827,
+            "alt_gain_se": 0.019157890393368685,
+            "goal_drop_mean": -0.0411655928554206,
+            "goal_drop_se": 0.01658911411247601
+          },
+          "rest_home": {
+            "n_episodes": 55,
+            "alt_gain_mean": 0.008257246504151473,
+            "alt_gain_se": 0.0024408528247352426,
+            "goal_drop_mean": -0.004619258913126859,
+            "goal_drop_se": 0.0029936078789915234
+          }
+        },
+        "significance": {
+          "alternative_gain": {
+            "hypothesis": "H1: mean(alt_gain) > 0",
+            "mean": 0.011984839078485238,
+            "std": 0.054171166547928765,
+            "ci95_low": 0.004779981566186865,
+            "ci95_high": 0.01968921842837446,
+            "cohen_dz": 0.22070254411141035,
+            "permutation_p_one_sided": 0.0006999650017499125,
+            "sign_test": {
+              "n_nonzero": 206,
+              "n_positive": 115,
+              "n_negative": 91,
+              "p_value": 0.054411777209325926
+            },
+            "pct_correct_direction": 0.558252427184466
+          },
+          "goal_drop": {
+            "hypothesis": "H1: mean(goal_drop) < 0",
+            "mean": -0.01997690801893008,
+            "std": 0.05085583890329527,
+            "ci95_low": -0.027173872068168334,
+            "ci95_high": -0.013130764745812167,
+            "cohen_dz": -0.391859849731655,
+            "permutation_p_one_sided": 4.999750012499375e-05,
+            "sign_test": {
+              "n_nonzero": 206,
+              "n_positive": 63,
+              "n_negative": 143,
+              "p_value": 1.2507088409165263e-08
+            },
+            "pct_correct_direction": 0.6941747572815534
+          }
+        },
+        "significance_clustered_by_agent": {
+          "n_agents": 15,
+          "mean_episodes_per_agent": 13.733333333333333,
+          "min_episodes_per_agent": 6,
+          "max_episodes_per_agent": 27,
+          "alternative_gain": {
+            "hypothesis": "H1: mean(alt_gain) > 0",
+            "mean": 0.009650058078068216,
+            "std": 0.016275762100077622,
+            "ci95_low": 0.0018812477073328951,
+            "ci95_high": 0.018100471039833272,
+            "cohen_dz": 0.5728052399718488,
+            "permutation_p_one_sided": 0.02269886505674716,
+            "sign_test": {
+              "n_nonzero": 15,
+              "n_positive": 10,
+              "n_negative": 5,
+              "p_value": 0.15087890625
+            },
+            "pct_correct_direction": 0.6666666666666666
+          },
+          "goal_drop": {
+            "hypothesis": "H1: mean(goal_drop) < 0",
+            "mean": -0.016560625765572264,
+            "std": 0.018902545924618125,
+            "ci95_low": -0.02623028268250469,
+            "ci95_high": -0.006908919350617923,
+            "cohen_dz": -0.84639839197184,
+            "permutation_p_one_sided": 0.002999850007499625,
+            "sign_test": {
+              "n_nonzero": 15,
+              "n_positive": 3,
+              "n_negative": 12,
+              "p_value": 0.017578125
+            },
+            "pct_correct_direction": 0.8
+          }
+        }
+      },
+      "0.50": {
+        "fraction": 0.5,
+        "n_episodes": 206,
+        "mean_alt_gain": 0.006119589124058325,
+        "std_alt_gain": 0.041946207634147976,
+        "mean_goal_drop": -0.014740655555850963,
+        "std_goal_drop": 0.05450113318554876,
+        "per_category": {
+          "attend_class": {
+            "n_episodes": 17,
+            "alt_gain_mean": -0.0039216246415809805,
+            "alt_gain_se": 0.004846040557440226,
+            "goal_drop_mean": -0.03454323288272409,
+            "goal_drop_se": 0.004172513570834167
+          },
+          "get_food": {
+            "n_episodes": 34,
+            "alt_gain_mean": 0.0001797325275896136,
+            "alt_gain_se": 0.003925757260912584,
+            "goal_drop_mean": 0.008230592370690668,
+            "goal_drop_se": 0.009010670902091034
+          },
+          "study": {
+            "n_episodes": 37,
+            "alt_gain_mean": 0.012876533793418063,
+            "alt_gain_se": 0.005127789988495973,
+            "goal_drop_mean": -0.014365620055311435,
+            "goal_drop_se": 0.009638359408896001
+          },
+          "socialize": {
+            "n_episodes": 34,
+            "alt_gain_mean": -0.018399152347255414,
+            "alt_gain_se": 0.004097191525699784,
+            "goal_drop_mean": -0.02759452909231186,
+            "goal_drop_se": 0.005967686217346736
+          },
+          "exercise": {
+            "n_episodes": 29,
+            "alt_gain_mean": 0.048700929161343304,
+            "alt_gain_se": 0.015232949822869418,
+            "goal_drop_mean": -0.05247542852985448,
+            "goal_drop_se": 0.01615190384031753
+          },
+          "rest_home": {
+            "n_episodes": 55,
+            "alt_gain_mean": 0.0010546282962928123,
+            "alt_gain_se": 0.001652949369000629,
+            "goal_drop_mean": 0.004769984226335179,
+            "goal_drop_se": 0.0032927326484507567
+          }
+        },
+        "significance": {
+          "alternative_gain": {
+            "hypothesis": "H1: mean(alt_gain) > 0",
+            "mean": 0.006119589124058325,
+            "std": 0.041946207634147976,
+            "ci95_low": 0.0006656893883603041,
+            "ci95_high": 0.012118985579423305,
+            "cohen_dz": 0.145536820296628,
+            "permutation_p_one_sided": 0.019399030048497575,
+            "sign_test": {
+              "n_nonzero": 206,
+              "n_positive": 112,
+              "n_negative": 94,
+              "p_value": 0.11808055447470749
+            },
+            "pct_correct_direction": 0.5436893203883495
+          },
+          "goal_drop": {
+            "hypothesis": "H1: mean(goal_drop) < 0",
+            "mean": -0.014740655555850963,
+            "std": 0.05450113318554876,
+            "ci95_low": -0.022383073422926687,
+            "ci95_high": -0.007373321874324884,
+            "cohen_dz": -0.2698078531622354,
+            "permutation_p_one_sided": 9.99950002499875e-05,
+            "sign_test": {
+              "n_nonzero": 206,
+              "n_positive": 67,
+              "n_negative": 139,
+              "p_value": 2.9277955100402734e-07
+            },
+            "pct_correct_direction": 0.6747572815533981
+          }
+        },
+        "significance_clustered_by_agent": {
+          "n_agents": 15,
+          "mean_episodes_per_agent": 13.733333333333333,
+          "min_episodes_per_agent": 6,
+          "max_episodes_per_agent": 27,
+          "alternative_gain": {
+            "hypothesis": "H1: mean(alt_gain) > 0",
+            "mean": 0.005390476567853894,
+            "std": 0.013482984765301003,
+            "ci95_low": -0.0009095684816845477,
+            "ci95_high": 0.01250509836473982,
+            "cohen_dz": 0.38624200870472997,
+            "permutation_p_one_sided": 0.0783960801959902,
+            "sign_test": {
+              "n_nonzero": 15,
+              "n_positive": 10,
+              "n_negative": 5,
+              "p_value": 0.15087890625
+            },
+            "pct_correct_direction": 0.6666666666666666
+          },
+          "goal_drop": {
+            "hypothesis": "H1: mean(goal_drop) < 0",
+            "mean": -0.012230342410709756,
+            "std": 0.02631579637761125,
+            "ci95_low": -0.025879703599392557,
+            "ci95_high": 0.0013068078161521941,
+            "cohen_dz": -0.44899394788163566,
+            "permutation_p_one_sided": 0.05214739263036848,
+            "sign_test": {
+              "n_nonzero": 15,
+              "n_positive": 4,
+              "n_negative": 11,
+              "p_value": 0.059234619140625
+            },
+            "pct_correct_direction": 0.7333333333333333
+          }
+        }
+      },
+      "0.75": {
+        "fraction": 0.75,
+        "n_episodes": 206,
+        "mean_alt_gain": 0.0039665601165558605,
+        "std_alt_gain": 0.040788326285568666,
+        "mean_goal_drop": -0.010002875700592995,
+        "std_goal_drop": 0.05824767217381113,
+        "per_category": {
+          "attend_class": {
+            "n_episodes": 17,
+            "alt_gain_mean": -0.012817570988358163,
+            "alt_gain_se": 0.0064646954354425495,
+            "goal_drop_mean": -0.0389930982800091,
+            "goal_drop_se": 0.006129458932595862
+          },
+          "get_food": {
+            "n_episodes": 34,
+            "alt_gain_mean": -0.0020996698726937733,
+            "alt_gain_se": 0.0016915207695073163,
+            "goal_drop_mean": 0.011591646984657821,
+            "goal_drop_se": 0.01050324097719016
+          },
+          "study": {
+            "n_episodes": 37,
+            "alt_gain_mean": 0.0027795105734511666,
+            "alt_gain_se": 0.0029844475383128933,
+            "goal_drop_mean": -0.003930782999944042,
+            "goal_drop_se": 0.011164379915235598
+          },
+          "socialize": {
+            "n_episodes": 34,
+            "alt_gain_mean": -0.014246727936309904,
+            "alt_gain_se": 0.004152951421446483,
+            "goal_drop_mean": -0.01589527167379856,
+            "goal_drop_se": 0.0055133691203482936
+          },
+          "exercise": {
+            "n_episodes": 29,
+            "alt_gain_mean": 0.052721639311976064,
+            "alt_gain_se": 0.015569578905911896,
+            "goal_drop_mean": -0.053637611454930796,
+            "goal_drop_se": 0.01610007881852619
+          },
+          "rest_home": {
+            "n_episodes": 55,
+            "alt_gain_mean": -0.0007451239081141445,
+            "alt_gain_se": 0.0011219853006788356,
+            "goal_drop_mean": 0.008173513073812831,
+            "goal_drop_se": 0.0031847804106800263
+          }
+        },
+        "significance": {
+          "alternative_gain": {
+            "hypothesis": "H1: mean(alt_gain) > 0",
+            "mean": 0.0039665601165558605,
+            "std": 0.040788326285568666,
+            "ci95_low": -0.001334618847787273,
+            "ci95_high": 0.009814718835674138,
+            "cohen_dz": 0.09701111056532999,
+            "permutation_p_one_sided": 0.08469576521173941,
+            "sign_test": {
+              "n_nonzero": 206,
+              "n_positive": 119,
+              "n_negative": 87,
+              "p_value": 0.015266850773063131
+            },
+            "pct_correct_direction": 0.5776699029126213
+          },
+          "goal_drop": {
+            "hypothesis": "H1: mean(goal_drop) < 0",
+            "mean": -0.010002875700592995,
+            "std": 0.05824767217381113,
+            "ci95_low": -0.01820722442002768,
+            "ci95_high": -0.0020280703755312618,
+            "cohen_dz": -0.17131272319302912,
+            "permutation_p_one_sided": 0.006899655017249137,
+            "sign_test": {
+              "n_nonzero": 206,
+              "n_positive": 65,
+              "n_negative": 141,
+              "p_value": 6.320929875094566e-08
+            },
+            "pct_correct_direction": 0.6844660194174758
+          }
+        },
+        "significance_clustered_by_agent": {
+          "n_agents": 15,
+          "mean_episodes_per_agent": 13.733333333333333,
+          "min_episodes_per_agent": 6,
+          "max_episodes_per_agent": 27,
+          "alternative_gain": {
+            "hypothesis": "H1: mean(alt_gain) > 0",
+            "mean": 0.0032986663641480147,
+            "std": 0.0143934095814844,
+            "ci95_low": -0.003139813784893031,
+            "ci95_high": 0.01119861461555328,
+            "cohen_dz": 0.22140789168001956,
+            "permutation_p_one_sided": 0.23108844557772112,
+            "sign_test": {
+              "n_nonzero": 15,
+              "n_positive": 8,
+              "n_negative": 7,
+              "p_value": 0.5
+            },
+            "pct_correct_direction": 0.5333333333333333
+          },
+          "goal_drop": {
+            "hypothesis": "H1: mean(goal_drop) < 0",
+            "mean": -0.0075780594878994394,
+            "std": 0.028052879361014093,
+            "ci95_low": -0.02188482051975598,
+            "ci95_high": 0.0071521875795926134,
+            "cohen_dz": -0.2609750289348228,
+            "permutation_p_one_sided": 0.16444177791110445,
+            "sign_test": {
+              "n_nonzero": 15,
+              "n_positive": 6,
+              "n_negative": 9,
+              "p_value": 0.303619384765625
+            },
+            "pct_correct_direction": 0.6
+          }
+        }
+      },
+      "1.00": {
+        "fraction": 1.0,
+        "n_episodes": 206,
+        "mean_alt_gain": 0.007158664165649928,
+        "std_alt_gain": 0.054651771470535244,
+        "mean_goal_drop": -0.01709583434231073,
+        "std_goal_drop": 0.06431026395462434,
+        "per_category": {
+          "attend_class": {
+            "n_episodes": 17,
+            "alt_gain_mean": -0.010188009865140698,
+            "alt_gain_se": 0.006883658797514244,
+            "goal_drop_mean": -0.04475768808932865,
+            "goal_drop_se": 0.010346835619169378
+          },
+          "get_food": {
+            "n_episodes": 34,
+            "alt_gain_mean": -0.004245605773215899,
+            "alt_gain_se": 0.0023434271542343804,
+            "goal_drop_mean": -0.007799917722449583,
+            "goal_drop_se": 0.0056203571124742455
+          },
+          "study": {
+            "n_episodes": 37,
+            "alt_gain_mean": 0.0003783013554007672,
+            "alt_gain_se": 0.0006331682563990962,
+            "goal_drop_mean": 0.006464716449782655,
+            "goal_drop_se": 0.009130503386835806
+          },
+          "socialize": {
+            "n_episodes": 34,
+            "alt_gain_mean": -0.0037727477901994657,
+            "alt_gain_se": 0.0025313905117310327,
+            "goal_drop_mean": -0.037345296758062696,
+            "goal_drop_se": 0.00642738408299483
+          },
+          "exercise": {
+            "n_episodes": 29,
+            "alt_gain_mean": 0.07282229812486697,
+            "alt_gain_se": 0.022788182728771374,
+            "goal_drop_mean": -0.06911376735259747,
+            "goal_drop_se": 0.02287390187092784
+          },
+          "rest_home": {
+            "n_episodes": 55,
+            "alt_gain_mean": -0.003733432523337657,
+            "alt_gain_se": 0.0011039834175325597,
+            "goal_drop_mean": 0.009803288362242958,
+            "goal_drop_se": 0.0021452095362655354
+          }
+        },
+        "significance": {
+          "alternative_gain": {
+            "hypothesis": "H1: mean(alt_gain) > 0",
+            "mean": 0.007158664165649928,
+            "std": 0.054651771470535244,
+            "ci95_low": 0.000137908349883475,
+            "ci95_high": 0.015048318745958161,
+            "cohen_dz": 0.1306685481010275,
+            "permutation_p_one_sided": 0.030448477576121194,
+            "sign_test": {
+              "n_nonzero": 206,
+              "n_positive": 118,
+              "n_negative": 88,
+              "p_value": 0.021533499238936223
+            },
+            "pct_correct_direction": 0.5728155339805825
+          },
+          "goal_drop": {
+            "hypothesis": "H1: mean(goal_drop) < 0",
+            "mean": -0.01709583434231073,
+            "std": 0.06431026395462434,
+            "ci95_low": -0.026199243784185897,
+            "ci95_high": -0.008490811493157332,
+            "cohen_dz": -0.26518767098353835,
+            "permutation_p_one_sided": 4.999750012499375e-05,
+            "sign_test": {
+              "n_nonzero": 206,
+              "n_positive": 69,
+              "n_negative": 137,
+              "p_value": 1.2449187472625462e-06
+            },
+            "pct_correct_direction": 0.6650485436893204
+          }
+        },
+        "significance_clustered_by_agent": {
+          "n_agents": 15,
+          "mean_episodes_per_agent": 13.733333333333333,
+          "min_episodes_per_agent": 6,
+          "max_episodes_per_agent": 27,
+          "alternative_gain": {
+            "hypothesis": "H1: mean(alt_gain) > 0",
+            "mean": 0.005463750036597021,
+            "std": 0.023339443042550458,
+            "ci95_low": -0.004338194399410589,
+            "ci95_high": 0.01862176568514228,
+            "cohen_dz": 0.22616152431453945,
+            "permutation_p_one_sided": 0.247887605619719,
+            "sign_test": {
+              "n_nonzero": 15,
+              "n_positive": 8,
+              "n_negative": 7,
+              "p_value": 0.5
+            },
+            "pct_correct_direction": 0.5333333333333333
+          },
+          "goal_drop": {
+            "hypothesis": "H1: mean(goal_drop) < 0",
+            "mean": -0.014929653584239205,
+            "std": 0.030202108984703074,
+            "ci95_low": -0.03098534863460168,
+            "ci95_high": -0.00017094856960430998,
+            "cohen_dz": -0.47756319465170805,
+            "permutation_p_one_sided": 0.039798010099495025,
+            "sign_test": {
+              "n_nonzero": 15,
+              "n_positive": 4,
+              "n_negative": 11,
+              "p_value": 0.059234619140625
+            },
+            "pct_correct_direction": 0.7333333333333333
+          }
+        }
+      }
+    }
+  },
+  "test_new_agent": {
+    "top_k": 3,
+    "n_total_episodes": 480,
+    "n_filtered_episodes": 237,
+    "fractions": {
+      "0.25": {
+        "fraction": 0.25,
+        "n_episodes": 237,
+        "mean_alt_gain": 0.0012989898750097183,
+        "std_alt_gain": 0.03603500561182311,
+        "mean_goal_drop": -0.022884893865729308,
+        "std_goal_drop": 0.03755703063825791,
+        "per_category": {
+          "attend_class": {
+            "n_episodes": 62,
+            "alt_gain_mean": -0.006359466293361038,
+            "alt_gain_se": 0.005040475229142273,
+            "goal_drop_mean": -0.026951759535398696,
+            "goal_drop_se": 0.00345025672564773
+          },
+          "get_food": {
+            "n_episodes": 36,
+            "alt_gain_mean": 0.011490889443572449,
+            "alt_gain_se": 0.005906713877883197,
+            "goal_drop_mean": -0.03130974946543574,
+            "goal_drop_se": 0.009026097402716666
+          },
+          "study": {
+            "n_episodes": 25,
+            "alt_gain_mean": 0.01909421182848746,
+            "alt_gain_se": 0.005595157521381259,
+            "goal_drop_mean": -0.024258418567478658,
+            "goal_drop_se": 0.004110463670744728
+          },
+          "socialize": {
+            "n_episodes": 55,
+            "alt_gain_mean": -0.005467278895296411,
+            "alt_gain_se": 0.005573533376205367,
+            "goal_drop_mean": -0.03369450914588842,
+            "goal_drop_se": 0.005682372572610218
+          },
+          "exercise": {
+            "n_episodes": 13,
+            "alt_gain_mean": -0.00031610586135089904,
+            "alt_gain_se": 0.010880451031282958,
+            "goal_drop_mean": -0.01588582333463889,
+            "goal_drop_se": 0.008789969483595013
+          },
+          "rest_home": {
+            "n_episodes": 46,
+            "alt_gain_mean": 0.002520215441820809,
+            "alt_gain_se": 0.002517920662587188,
+            "goal_drop_mean": 0.0008829216594281404,
+            "goal_drop_se": 0.003435893173259152
+          }
+        },
+        "significance": {
+          "alternative_gain": {
+            "hypothesis": "H1: mean(alt_gain) > 0",
+            "mean": 0.0012989898750097183,
+            "std": 0.03603500561182311,
+            "ci95_low": -0.0031248384095432123,
+            "ci95_high": 0.0059532531617731465,
+            "cohen_dz": 0.035971868773463866,
+            "permutation_p_one_sided": 0.2908354582270887,
+            "sign_test": {
+              "n_nonzero": 237,
+              "n_positive": 120,
+              "n_negative": 117,
+              "p_value": 0.44833512385336316
+            },
+            "pct_correct_direction": 0.5063291139240507
+          },
+          "goal_drop": {
+            "hypothesis": "H1: mean(goal_drop) < 0",
+            "mean": -0.022884893865729308,
+            "std": 0.03755703063825791,
+            "ci95_low": -0.027687571872269365,
+            "ci95_high": -0.018156128896907254,
+            "cohen_dz": -0.6080502658076399,
+            "permutation_p_one_sided": 4.999750012499375e-05,
+            "sign_test": {
+              "n_nonzero": 237,
+              "n_positive": 49,
+              "n_negative": 188,
+              "p_value": 1.1074037845083952e-20
+            },
+            "pct_correct_direction": 0.7932489451476793
+          }
+        },
+        "significance_clustered_by_agent": {
+          "n_agents": 15,
+          "mean_episodes_per_agent": 15.8,
+          "min_episodes_per_agent": 10,
+          "max_episodes_per_agent": 23,
+          "alternative_gain": {
+            "hypothesis": "H1: mean(alt_gain) > 0",
+            "mean": 0.0018572920104586333,
+            "std": 0.015500975276777672,
+            "ci95_low": -0.005714047835625921,
+            "ci95_high": 0.009702924876617927,
+            "cohen_dz": 0.11575494561113264,
+            "permutation_p_one_sided": 0.327983600819959,
+            "sign_test": {
+              "n_nonzero": 15,
+              "n_positive": 8,
+              "n_negative": 7,
+              "p_value": 0.5
+            },
+            "pct_correct_direction": 0.5333333333333333
+          },
+          "goal_drop": {
+            "hypothesis": "H1: mean(goal_drop) < 0",
+            "mean": -0.022438611517770997,
+            "std": 0.01995149208289774,
+            "ci95_low": -0.03296834808847794,
+            "ci95_high": -0.0129597530968168,
+            "cohen_dz": -1.0865231593184457,
+            "permutation_p_one_sided": 0.00024998750062496874,
+            "sign_test": {
+              "n_nonzero": 15,
+              "n_positive": 1,
+              "n_negative": 14,
+              "p_value": 0.00048828125
+            },
+            "pct_correct_direction": 0.9333333333333333
+          }
+        }
+      },
+      "0.50": {
+        "fraction": 0.5,
+        "n_episodes": 237,
+        "mean_alt_gain": 0.005476282001069137,
+        "std_alt_gain": 0.04281416795566315,
+        "mean_goal_drop": -0.02395855297849274,
+        "std_goal_drop": 0.04644590156650306,
+        "per_category": {
+          "attend_class": {
+            "n_episodes": 62,
+            "alt_gain_mean": 0.013679286038506776,
+            "alt_gain_se": 0.007437678329666766,
+            "goal_drop_mean": -0.04132985756281884,
+            "goal_drop_se": 0.007202016511368019
+          },
+          "get_food": {
+            "n_episodes": 36,
+            "alt_gain_mean": 0.015124018366306934,
+            "alt_gain_se": 0.005391547125571744,
+            "goal_drop_mean": -0.024854967965640955,
+            "goal_drop_se": 0.006893269050218355
+          },
+          "study": {
+            "n_episodes": 25,
+            "alt_gain_mean": 0.02604023342939854,
+            "alt_gain_se": 0.006932943705052421,
+            "goal_drop_mean": -0.030384744927287103,
+            "goal_drop_se": 0.005268015539011194
+          },
+          "socialize": {
+            "n_episodes": 55,
+            "alt_gain_mean": -0.013973550108152918,
+            "alt_gain_se": 0.00553160381312814,
+            "goal_drop_mean": -0.03191360888833349,
+            "goal_drop_se": 0.006122645668617995
+          },
+          "exercise": {
+            "n_episodes": 13,
+            "alt_gain_mean": 0.011127821838866882,
+            "alt_gain_se": 0.00891872278629784,
+            "goal_drop_mean": -0.015060271637944074,
+            "goal_drop_se": 0.006221192772742099
+          },
+          "rest_home": {
+            "n_episodes": 46,
+            "alt_gain_mean": -0.002648344022019715,
+            "alt_gain_se": 0.0016436443797621246,
+            "goal_drop_mean": 0.010645730501931646,
+            "goal_drop_se": 0.003987686239481941
+          }
+        },
+        "significance": {
+          "alternative_gain": {
+            "hypothesis": "H1: mean(alt_gain) > 0",
+            "mean": 0.005476282001069137,
+            "std": 0.04281416795566315,
+            "ci95_low": 0.0003985615308931619,
+            "ci95_high": 0.011029014437314293,
+            "cohen_dz": 0.12763803926609443,
+            "permutation_p_one_sided": 0.023798810059497025,
+            "sign_test": {
+              "n_nonzero": 237,
+              "n_positive": 129,
+              "n_negative": 108,
+              "p_value": 0.09689438938533018
+            },
+            "pct_correct_direction": 0.5443037974683544
+          },
+          "goal_drop": {
+            "hypothesis": "H1: mean(goal_drop) < 0",
+            "mean": -0.02395855297849274,
+            "std": 0.04644590156650306,
+            "ci95_low": -0.029897214861032615,
+            "ci95_high": -0.018258488194364663,
+            "cohen_dz": -0.5147484120434631,
+            "permutation_p_one_sided": 4.999750012499375e-05,
+            "sign_test": {
+              "n_nonzero": 237,
+              "n_positive": 53,
+              "n_negative": 184,
+              "p_value": 1.977514850565044e-18
+            },
+            "pct_correct_direction": 0.7763713080168776
+          }
+        },
+        "significance_clustered_by_agent": {
+          "n_agents": 15,
+          "mean_episodes_per_agent": 15.8,
+          "min_episodes_per_agent": 10,
+          "max_episodes_per_agent": 23,
+          "alternative_gain": {
+            "hypothesis": "H1: mean(alt_gain) > 0",
+            "mean": 0.004960459508499008,
+            "std": 0.018203280198299556,
+            "ci95_low": -0.003972711913894222,
+            "ci95_high": 0.014115984208031174,
+            "cohen_dz": 0.2632634953290517,
+            "permutation_p_one_sided": 0.16339183040847957,
+            "sign_test": {
+              "n_nonzero": 15,
+              "n_positive": 8,
+              "n_negative": 7,
+              "p_value": 0.5
+            },
+            "pct_correct_direction": 0.5333333333333333
+          },
+          "goal_drop": {
+            "hypothesis": "H1: mean(goal_drop) < 0",
+            "mean": -0.023304177717318516,
+            "std": 0.020547145444088318,
+            "ci95_low": -0.03377364595588503,
+            "ci95_high": -0.013017489102349756,
+            "cohen_dz": -1.0957227448155629,
+            "permutation_p_one_sided": 0.0005499725013749313,
+            "sign_test": {
+              "n_nonzero": 15,
+              "n_positive": 2,
+              "n_negative": 13,
+              "p_value": 0.003692626953125
+            },
+            "pct_correct_direction": 0.8666666666666667
+          }
+        }
+      },
+      "0.75": {
+        "fraction": 0.75,
+        "n_episodes": 237,
+        "mean_alt_gain": 0.0017427658383491228,
+        "std_alt_gain": 0.03302551211199286,
+        "mean_goal_drop": -0.02635641586632794,
+        "std_goal_drop": 0.050976686824553426,
+        "per_category": {
+          "attend_class": {
+            "n_episodes": 62,
+            "alt_gain_mean": 0.010029405703676962,
+            "alt_gain_se": 0.00563954954387346,
+            "goal_drop_mean": -0.05893063121625493,
+            "goal_drop_se": 0.00771743190601516
+          },
+          "get_food": {
+            "n_episodes": 36,
+            "alt_gain_mean": 0.0031448852113201576,
+            "alt_gain_se": 0.0014358036428742504,
+            "goal_drop_mean": -0.02182469020287196,
+            "goal_drop_se": 0.007020207628666054
+          },
+          "study": {
+            "n_episodes": 25,
+            "alt_gain_mean": 0.02360964368127469,
+            "alt_gain_se": 0.005764558972815277,
+            "goal_drop_mean": -0.032728655003011226,
+            "goal_drop_se": 0.0069206332644170445
+          },
+          "socialize": {
+            "n_episodes": 55,
+            "alt_gain_mean": -0.018258438429443465,
+            "alt_gain_se": 0.0040498175915422594,
+            "goal_drop_mean": -0.02723324176940051,
+            "goal_drop_se": 0.005885675998239113
+          },
+          "exercise": {
+            "n_episodes": 13,
+            "alt_gain_mean": 0.020874310472477803,
+            "alt_gain_se": 0.009692793799664475,
+            "goal_drop_mean": -0.020800471305847168,
+            "goal_drop_se": 0.007805494035673509
+          },
+          "rest_home": {
+            "n_episodes": 46,
+            "alt_gain_mean": -0.0038999246109009448,
+            "alt_gain_se": 0.0011496395202924528,
+            "goal_drop_mean": 0.016942787429560787,
+            "goal_drop_se": 0.0033545456829183386
+          }
+        },
+        "significance": {
+          "alternative_gain": {
+            "hypothesis": "H1: mean(alt_gain) > 0",
+            "mean": 0.0017427658383491228,
+            "std": 0.03302551211199286,
+            "ci95_low": -0.0023455938470596884,
+            "ci95_high": 0.006257202205301472,
+            "cohen_dz": 0.052658842190606285,
+            "permutation_p_one_sided": 0.20903954802259886,
+            "sign_test": {
+              "n_nonzero": 237,
+              "n_positive": 138,
+              "n_negative": 99,
+              "p_value": 0.006702504191279924
+            },
+            "pct_correct_direction": 0.5822784810126582
+          },
+          "goal_drop": {
+            "hypothesis": "H1: mean(goal_drop) < 0",
+            "mean": -0.02635641586632794,
+            "std": 0.050976686824553426,
+            "ci95_low": -0.03290703376707963,
+            "ci95_high": -0.019995778009299397,
+            "cohen_dz": -0.5159368816105894,
+            "permutation_p_one_sided": 4.999750012499375e-05,
+            "sign_test": {
+              "n_nonzero": 237,
+              "n_positive": 51,
+              "n_negative": 186,
+              "p_value": 1.5544802899688242e-19
+            },
+            "pct_correct_direction": 0.7848101265822784
+          }
+        },
+        "significance_clustered_by_agent": {
+          "n_agents": 15,
+          "mean_episodes_per_agent": 15.8,
+          "min_episodes_per_agent": 10,
+          "max_episodes_per_agent": 23,
+          "alternative_gain": {
+            "hypothesis": "H1: mean(alt_gain) > 0",
+            "mean": 0.00202230064883771,
+            "std": 0.015073952606252881,
+            "ci95_low": -0.005279672653934466,
+            "ci95_high": 0.009880219042458257,
+            "cohen_dz": 0.12960953843967954,
+            "permutation_p_one_sided": 0.31383430828458575,
+            "sign_test": {
+              "n_nonzero": 15,
+              "n_positive": 8,
+              "n_negative": 7,
+              "p_value": 0.5
+            },
+            "pct_correct_direction": 0.5333333333333333
+          },
+          "goal_drop": {
+            "hypothesis": "H1: mean(goal_drop) < 0",
+            "mean": -0.02603402285339747,
+            "std": 0.02421739849831412,
+            "ci95_low": -0.03853644636051696,
+            "ci95_high": -0.014007184376651636,
+            "cohen_dz": -1.0385614111654804,
+            "permutation_p_one_sided": 0.0007499625018749063,
+            "sign_test": {
+              "n_nonzero": 15,
+              "n_positive": 2,
+              "n_negative": 13,
+              "p_value": 0.003692626953125
+            },
+            "pct_correct_direction": 0.8666666666666667
+          }
+        }
+      },
+      "1.00": {
+        "fraction": 1.0,
+        "n_episodes": 237,
+        "mean_alt_gain": 0.0007204151886605233,
+        "std_alt_gain": 0.026584700236912406,
+        "mean_goal_drop": -0.02416809660064269,
+        "std_goal_drop": 0.04653520871869585,
+        "per_category": {
+          "attend_class": {
+            "n_episodes": 62,
+            "alt_gain_mean": 0.003507336510065188,
+            "alt_gain_se": 0.0024875351123220145,
+            "goal_drop_mean": -0.04973229116970493,
+            "goal_drop_se": 0.007277216413565024
+          },
+          "get_food": {
+            "n_episodes": 36,
+            "alt_gain_mean": 0.0007036076129796558,
+            "alt_gain_se": 0.0006076029638626584,
+            "goal_drop_mean": -0.013100661130415069,
+            "goal_drop_se": 0.005202464673921078
+          },
+          "study": {
+            "n_episodes": 25,
+            "alt_gain_mean": 0.03008636146402978,
+            "alt_gain_se": 0.009024030216673955,
+            "goal_drop_mean": -0.03818589858710766,
+            "goal_drop_se": 0.007829723915701933
+          },
+          "socialize": {
+            "n_episodes": 55,
+            "alt_gain_mean": -0.012834173798979652,
+            "alt_gain_se": 0.003167846984587133,
+            "goal_drop_mean": -0.030288319018754093,
+            "goal_drop_se": 0.005374201047746466
+          },
+          "exercise": {
+            "n_episodes": 13,
+            "alt_gain_mean": 0.011815752194934248,
+            "alt_gain_se": 0.011307592758409962,
+            "goal_drop_mean": -0.011926955901659451,
+            "goal_drop_se": 0.01119898402270937
+          },
+          "rest_home": {
+            "n_episodes": 46,
+            "alt_gain_mean": -0.005911534655864653,
+            "alt_gain_se": 0.0014751123178905002,
+            "goal_drop_mean": 0.013103095571631971,
+            "goal_drop_se": 0.0021689022752903516
+          }
+        },
+        "significance": {
+          "alternative_gain": {
+            "hypothesis": "H1: mean(alt_gain) > 0",
+            "mean": 0.0007204151886605233,
+            "std": 0.026584700236912406,
+            "ci95_low": -0.0026078337707182374,
+            "ci95_high": 0.004200132019088064,
+            "cohen_dz": 0.027041633434427448,
+            "permutation_p_one_sided": 0.33248337583120846,
+            "sign_test": {
+              "n_nonzero": 237,
+              "n_positive": 149,
+              "n_negative": 88,
+              "p_value": 4.476773439453477e-05
+            },
+            "pct_correct_direction": 0.6286919831223629
+          },
+          "goal_drop": {
+            "hypothesis": "H1: mean(goal_drop) < 0",
+            "mean": -0.02416809660064269,
+            "std": 0.04653520871869585,
+            "ci95_low": -0.03006323163794503,
+            "ci95_high": -0.01831514706564006,
+            "cohen_dz": -0.5182539376315846,
+            "permutation_p_one_sided": 4.999750012499375e-05,
+            "sign_test": {
+              "n_nonzero": 237,
+              "n_positive": 52,
+              "n_negative": 185,
+              "p_value": 5.612024052284478e-19
+            },
+            "pct_correct_direction": 0.7805907172995781
+          }
+        },
+        "significance_clustered_by_agent": {
+          "n_agents": 15,
+          "mean_episodes_per_agent": 15.8,
+          "min_episodes_per_agent": 10,
+          "max_episodes_per_agent": 23,
+          "alternative_gain": {
+            "hypothesis": "H1: mean(alt_gain) > 0",
+            "mean": 0.0017978084949853506,
+            "std": 0.013781062635662375,
+            "ci95_low": -0.004743041915471679,
+            "ci95_high": 0.009280053612450398,
+            "cohen_dz": 0.1260315013779068,
+            "permutation_p_one_sided": 0.3287835608219589,
+            "sign_test": {
+              "n_nonzero": 15,
+              "n_positive": 9,
+              "n_negative": 6,
+              "p_value": 0.303619384765625
+            },
+            "pct_correct_direction": 0.6
+          },
+          "goal_drop": {
+            "hypothesis": "H1: mean(goal_drop) < 0",
+            "mean": -0.024387405938004383,
+            "std": 0.025462763905098055,
+            "ci95_low": -0.037404953776281974,
+            "ci95_high": -0.011696267186703522,
+            "cohen_dz": -0.9252912439174789,
+            "permutation_p_one_sided": 0.0018499075046247689,
+            "sign_test": {
+              "n_nonzero": 15,
+              "n_positive": 4,
+              "n_negative": 11,
+              "p_value": 0.059234619140625
+            },
+            "pct_correct_direction": 0.7333333333333333
+          }
+        }
+      }
+    }
+  }
+}

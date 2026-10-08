@@ -1,0 +1,27 @@
+{
+  "selected_config": "balanced_focal",
+  "selection_reason": "within_goal_tolerance",
+  "default_goal_top1": 0.21916666328907014,
+  "goal_tolerance": 0.02,
+  "candidates": [
+    {
+      "config": "low_lr_weighted",
+      "goal": 0.11458333432674409,
+      "closed_f1": 0.3982608702933453,
+      "within_tolerance": false
+    },
+    {
+      "config": "balanced_bce",
+      "goal": 0.20250000059604645,
+      "closed_f1": 0.37422530692436917,
+      "within_tolerance": true
+    },
+    {
+      "config": "balanced_focal",
+      "goal": 0.20916666686534882,
+      "closed_f1": 0.3764512925648488,
+      "within_tolerance": true
+    }
+  ],
+  "selection_source": "/home/rahm/PhD/bdi_tom_agents/outputs/diagnostics/robustness/sparse/aggregate/selected_dense_config.json"
+}

@@ -1,0 +1,13 @@
+# Core dependencies for the BDI ToM codebase (Python 3.12).
+# Versions pinned to the environment used to produce the paper results.
+torch==2.8.0
+osmnx==2.0.6
+networkx==3.5
+numpy==2.3.3
+scipy==1.16.2
+matplotlib==3.10.6
+tqdm
+
+# Used by notebooks / analysis (optional for training + eval):
+scikit-learn==1.7.2
+pandas==2.3.3
