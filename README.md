@@ -6,6 +6,7 @@ Official code, data, and trained models for
 > Nigel F. Doering\*, Rahath Malladi\*, Arshia Sangwan, M Tanjid Hasan Tonmoy, Jacob Doan,
 > David Danks, Tauhidur Rahman (\* equal contribution)
 > *Transactions on Machine Learning Research* (TMLR), 2026 ·
+> [Paper (PDF)](paper/Structured_Machine_Theory_of_Mind_TMLR2026.pdf) ·
 > [OpenReview](https://openreview.net/forum?id=PfSNLg0zcK)
 
 **SMToM** (Structured Machine Theory of Mind) attributes explicit mental states to an agent
@@ -161,6 +162,7 @@ simulation/    probabilistic BDI data generator (no learned components)
 model/         PyTorch models and dataset/dataloader code
 scripts/       entry points: simulate, train_*, eval_*, diagnostics (diag_*, cf_*, robustness_*)
 reproduce/     one-command pipelines: evaluate_main.sh, train_main.sh, appendix.sh
+paper/         the TMLR 2026 paper (camera-ready PDF)
 checkpoints/   (not committed) the downloaded single SMToM model for scripts/demo_counterfactual.py
 data/          campus walking graph, BToM distance cache, dataset splits (the paper's dataset)
 outputs/       training artifacts: per-model training histories/curves and, after download, checkpoints
